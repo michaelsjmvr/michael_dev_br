@@ -12,25 +12,60 @@ html, body{
 }
 
 .secao1{
-    background-color: #091B2A;
+    background-image: url(/img/background/background-2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100%;
     padding-top: 1%;
     padding-left: 8%;
     padding-right: 8%;
     padding-bottom: 0%;
+    position: relative;
 }
 
-.secao1 header{
+.secao1 .background-master{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ou largura desejada */
+    height: 100%; /* Ou altura desejada */
+    padding-top: 1%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 0%;
+    background-color: rgba(9, 27, 42, 0.288);
+    z-index: 1;
+}
+
+.secao1 .background-master header{
     display: flex;
     justify-content: space-between;
 }
 
-.secao1 header .logo a{
+.secao1 .background-master header .logo a{
     text-decoration: none;
 }
 
-.secao1 header .logo h1{
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.secao1 .background-master header .logo{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing 10s steps(300, end);
+    z-index: 2;
+}
+
+.secao1 .background-master header .logo h1{
     font-family: "Noto Sans KR", sans-serif;
     font-size: 30px;
     animation: fadeEffect2 10s infinite; 
@@ -42,19 +77,24 @@ html, body{
     100% { color: #D5DFE9; } 
 }
 
-.secao1 header .organizacao{
+.secao1 .background-master header .organizacao{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.secao1 header .organizacao nav{
+.secao1 .background-master header .organizacao nav{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 2;
+        
+    animation: typing 1s steps(400, end);
 }
 
-.secao1 header .organizacao nav .link-1{
+.secao1 .background-master header .organizacao nav .link-1{
     margin-right:20px ;
     text-decoration: none;
     font-family: "Noto Sans KR", sans-serif;
@@ -63,7 +103,7 @@ html, body{
     transition: color 0.3s ease-in;
 }
 
-.secao1 header .organizacao nav .link{
+.secao1 .background-master header .organizacao nav .link{
     margin-right:20px ;
     text-decoration: none;
     font-family: "Noto Sans KR", sans-serif;
@@ -88,21 +128,22 @@ html, body{
     gap: 20px;
 }
 
-.parte2_da_secao1  .part1{
+.parte2_da_secao1 .part1{
     width: 50%;
 }
 
-.parte2_da_secao1 .organizacao .part2{
+.parte2_da_secao1 .part2{
     display: flex;
-    width: 50%;
+    flex: 1;
 }
 
 .parte2_da_secao1 .organizacao .background{
     display: flex;
     width: 100%;
-    height: 70%;
-    justify-content: center;
+    justify-content: right;
     z-index: 1;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
 }
 
 .parte2_da_secao1 .organizacao .background img {
@@ -111,6 +152,7 @@ html, body{
     opacity: 1; 
     animation: fadeEffect 5s infinite; 
     border-radius: 50%;
+    margin-right: 10%;
 }
 
 @keyframes fadeEffect {
@@ -124,6 +166,10 @@ html, body{
     font-family: "Noto Sans KR", sans-serif;
     font-size: 40px;
     font-weight: 900;
+    overflow: hidden;
+    white-space: nowrap;
+        
+    animation: typing 2s steps(400, end);
 }
 
 .parte2_da_secao1 .part1 h3{
@@ -133,12 +179,33 @@ html, body{
     font-weight: 700;
     opacity: 1; 
     animation: fadeEffect 5s infinite; 
+    overflow: hidden;
+    white-space: nowrap;
+        
+    animation: typing 2s steps(400, end);
 }
 
 .parte2_da_secao1 .part1 p{
     width: 90%;
     font-family: "Noto Sans KR", sans-serif;
     color: #EDEDF1;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    background-color: #091b2a8f;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .parte2_da_secao1 .part1 .botoes{
@@ -146,6 +213,8 @@ html, body{
     justify-content: left;
     flex-direction: row;
     flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
 }
 
 .parte2_da_secao1 .part1 .botoes .link{
@@ -168,7 +237,7 @@ html, body{
 }
 
 .parte2_da_secao1 .part1 .botoes .link-1:hover{
-    background-color: rgba(0, 160, 228, 0.63);
+    background-color: rgb(1, 128, 182);
     color: white;
 }
 .parte2_da_secao1 .part1 .botoes .link-2{
@@ -180,7 +249,7 @@ html, body{
 }
 
 .parte2_da_secao1 .part1 .botoes .link-2:hover{
-    background-color: rgba(0, 160, 228, 0.63);
+    background-color: rgb(1, 128, 182);
     border-color: transparent;
     color: white;
 }
