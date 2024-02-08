@@ -267,6 +267,10 @@ html, body{
         width: 100%;
     }
 
+    .parte2_da_secao1 .part1 h3 {
+        font-size: 24px;
+    }
+
     .parte2_da_secao1 .part1 p {
         width: 100%;
     }
