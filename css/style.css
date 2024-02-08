@@ -253,3 +253,44 @@ html, body{
     border-color: transparent;
     color: white;
 }
+
+@media (width <= 576px){
+    .secao1 .background-master header{
+        display: none;
+    }
+
+    .parte2_da_secao1 .part2{
+        display: none;
+    }
+
+    .parte2_da_secao1 .part1{
+        width: 100%;
+    }
+
+    .parte2_da_secao1 .part1 p {
+        width: 100%;
+    }
+
+    .parte2_da_secao1 .part1 .botoes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center; /* Para centralizar horizontalmente */
+    }
+
+    .parte2_da_secao1 .part1 .botoes .link{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .parte2_da_secao1 .part1 .botoes .link-1{
+        width: auto;
+        text-align: center;
+    }
+
+    .parte2_da_secao1 .part1 .botoes .link-2{
+        width: auto;
+        text-align: center;
+    }
+}
