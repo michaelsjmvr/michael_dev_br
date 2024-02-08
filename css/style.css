@@ -161,7 +161,7 @@ html, body{
     background-color: #02A3E9;
     border-radius: 10px;
     color: #091B2A;
-    transition: background-color, color 0.3s ease-in;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .parte2_da_secao1 .part1 .botoes .link-1:hover{
@@ -173,7 +173,7 @@ html, body{
     border-color: #02A3E9;
     border-radius: 10px;
     color: #02A3E9;
-    transition: background-color, color 0.3s ease-in;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .parte2_da_secao1 .part1 .botoes .link-2:hover{
