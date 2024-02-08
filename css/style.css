@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.secao1{
+    background-color: #091B2A;
+    width: 100%;
+    height: 100%;
+    padding-top: 1%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 0%;
+}
+
+.secao1 header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.secao1 header .logo a{
+    text-decoration: none;
+}
+
+.secao1 header .logo h1{
+    font-family: "Noto Sans KR", sans-serif;
+    color: #D5DFE9;
+    font-size: 30px;
+    transition: color 0.3s ease-in;
+}
+
+.secao1 header .logo h1:hover{
+    color: #03A5E4;
+}
+
+.secao1 header .organizacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secao1 header .organizacao nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.secao1 header .organizacao nav .link{
+    margin-right:20px ;
+    text-decoration: none;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    color: #D5DFE9;
+    transition: color 0.3s ease-in;
+}
+
+.secao1 header .organizacao nav .link:hover{
+    color: #03A5E4;
+}
+
+.parte2_da_secao1{
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parte2_da_secao1 .organizacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.parte2_da_secao1  .part1{
+    width: 50%;
+}
+
+.parte2_da_secao1 .organizacao .part2{
+    display: flex;
+    width: 50%;
+}
+
+.parte2_da_secao1 .organizacao .background{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    z-index: 1;
+}
+
+.parte2_da_secao1 .organizacao .background img {
+    opacity: 1; 
+    animation: fadeEffect 5s infinite; 
+    border-radius: 50%;
+}
+
+@keyframes fadeEffect {
+    0% { opacity: 0.5; } 
+    50% { opacity: 1; } 
+    100% { opacity: 0.5; } 
+}
+
+.parte2_da_secao1 .part1 h2{
+    color: #EDEDF1;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.parte2_da_secao1 .part1 h3{
+    font-family: "Noto Sans KR", sans-serif;
+    color: #02A3E9;
+    font-size: 28px;
+    font-weight: 700;
+    opacity: 1; 
+    animation: fadeEffect 5s infinite; 
+}
+
+.parte2_da_secao1 .part1 p{
+    width: 90%;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #EDEDF1;
+}
+
+.parte2_da_secao1 .part1 .botoes{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.parte2_da_secao1 .part1 .botoes .link{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 900;
+}
+
+.parte2_da_secao1 .part1 .botoes .link-1{
+    background-color: #02A3E9;
+    border-radius: 10px;
+    color: #091B2A;
+    transition: background-color, color 0.3s ease-in;
+}
+
+.parte2_da_secao1 .part1 .botoes .link-1:hover{
+    background-color: rgba(0, 160, 228, 0.63);
+    color: white;
+}
+.parte2_da_secao1 .part1 .botoes .link-2{
+    border: 2px solid;
+    border-color: #02A3E9;
+    border-radius: 10px;
+    color: #02A3E9;
+    transition: background-color, color 0.3s ease-in;
+}
+
+.parte2_da_secao1 .part1 .botoes .link-2:hover{
+    background-color: rgba(0, 160, 228, 0.63);
+    border-color: transparent;
+    color: white;
+}
