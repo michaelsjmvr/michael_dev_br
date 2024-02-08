@@ -106,6 +106,8 @@ html, body{
 }
 
 .parte2_da_secao1 .organizacao .background img {
+    width: 350px;
+    height: 350px;
     opacity: 1; 
     animation: fadeEffect 5s infinite; 
     border-radius: 50%;
