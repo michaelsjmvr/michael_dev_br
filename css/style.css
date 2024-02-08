@@ -32,13 +32,14 @@ html, body{
 
 .secao1 header .logo h1{
     font-family: "Noto Sans KR", sans-serif;
-    color: #D5DFE9;
     font-size: 30px;
-    transition: color 0.3s ease-in;
+    animation: fadeEffect2 10s infinite; 
 }
 
-.secao1 header .logo h1:hover{
-    color: #03A5E4;
+@keyframes fadeEffect2 {
+    0% { color: #D5DFE9; } 
+    50% { color: #03A5E4; } 
+    100% { color: #D5DFE9; } 
 }
 
 .secao1 header .organizacao{
