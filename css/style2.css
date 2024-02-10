@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.secao1{
+    background-image: url(/img/background/background-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 130%;
+    padding-top: 1%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 0%;
+    position: relative;
+}
+
+.secao1 .background-master{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ou largura desejada */
+    height: 100%; /* Ou altura desejada */
+    padding-top: 1%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 0%;
+    background-color: rgba(9, 27, 42, 0.288);
+    z-index: 1;
+}
+
+.secao1 .background-master header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.secao1 .background-master header .logo a{
+    text-decoration: none;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.secao1 .background-master header .logo{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing 10s steps(300, end);
+    z-index: 2;
+}
+
+.secao1 .background-master header .logo h1{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 30px;
+    animation: fadeEffect2 10s infinite; 
+}
+
+@keyframes fadeEffect2 {
+    0% { color: #D5DFE9; } 
+    50% { color: #03A5E4; } 
+    100% { color: #D5DFE9; } 
+}
+
+.secao1 .background-master header .organizacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secao1 .background-master header .organizacao nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 2;
+        
+    animation: typing 1s steps(400, end);
+}
+
+.secao1 .background-master header .organizacao nav .link-1{
+    margin-right:20px ;
+    text-decoration: none;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    color: #D5DFE9;
+    transition: color 0.3s ease-in;
+}
+
+.secao1 .background-master header .organizacao nav .link{
+    margin-right:20px ;
+    text-decoration: none;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    color: #03A5E4;
+}
+
+.secao1 header .organizacao nav .link-1:hover{
+    color: #03A5E4;
+}
+
+.parte2_da_secao1{
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parte2_da_secao1 .organizacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.background-master .container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.background-master .container .topo{
+    display: flex;
+    background-color: #091b2a8f;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.background-master .container .topo .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background-master .container .topo p span{
+    text-align: left;
+    color: #03A5E4;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.background-master .container .topo h2{
+    color: white;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1./rem;
+}
+
+.background-master .container .topo p{
+    color: white;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+.background-master .container_2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 400px;
+}
+
+/* Estilo para a barra de progresso */
+.progress-bar {
+    margin: 20px;
+}
+
+.titulo{
+    color: white;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.mini{
+    color: white;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.row h2{
+    color: #03A5E4;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.kit{
+    width: 350px;
+    background-color: #091b2a8f;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Estilo para o rótulo de progresso */
+.progress-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilo para a barra de progresso */
+.barfiller {
+    position: relative;
+    height: 20px;
+    background-color: white; /* Cor de fundo branca */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo para a barra de preenchimento */
+.fill {
+    display: block;
+    height: 100%;
+    background-color: #03A5E4; /* Cor de preenchimento #03A5E4 */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo para a porcentagem dentro da barra de progresso */
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Cor do texto branco */
+}
+
+/* Estilo para a dica (tooltip) */
+.tip {
+    position: absolute;
+    padding: 4px 8px;
+    background: #5F5A9B; /* Cor de preenchimento #03A5E4 */
+    color: white; /* Cor do texto branco */
+    border-radius: 4px;
+    font-size: 12px;
+    top: -30px;
+    z-index: 999;
+}
+
+@media (width <= 576px){
+    .secao1 .background-master header{
+        display: none;
+    }
+}
