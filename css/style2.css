@@ -95,19 +95,30 @@ body {
     margin-top: -110px;
 }
 
+.veil {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.932); /* Cor e opacidade do véu */
+    z-index: 99; /* Ajustado para garantir que o véu esteja acima de todos os outros elementos */
+}
+
 .parallax-container {
     position: relative;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 110vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container {
-    position: relative;
-    z-index: 1;
+    z-index: 1; /* Ajustado para garantir que os elementos dentro das seções estejam abaixo do véu */
 }
 
 .background-image1 {
@@ -120,6 +131,46 @@ body {
 
 .background-image3 {
     background-image: url(/img/background/background-5.webp);
+}
+
+.history {
+    color: white;
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+    font-family: "Noto Sans KR", sans-serif;
+    background-color: #091b2a8f;
+    border-radius: 5px;
+}
+
+.container .row {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.parallax-container {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
 }
 
 .history {
@@ -149,9 +200,7 @@ body {
 }
 
 .parallax-container .container {
-    background-color: rgba(9, 27, 42, 0);
     border-radius: 6px;
-    transition: background-color 1s ease-in;
 }
 
 .parallax-container .parte2 {
@@ -201,37 +250,6 @@ body {
     color: #03A5E4;
 }
 
-.background-master {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    /* Ajuste conforme necessário */
-    background-image: url(/img/background/background-6.webp);
-    /* Substitua pelo caminho da sua imagem de fundo */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    /* Adiciona o efeito de parallax */
-}
-
-.secao1 .kit {
-    background-color: rgba(9, 27, 42, 0.795);
-    border-radius: 6px;
-    padding: 10px;
-    font-family: "Noto Sans KR", sans-serif;
-}
-
-.secao1 .kit h2 {
-    color: white;
-}
-
-.secao1 .kit p {
-    color: #03A5E4
-}
-
 @media (width <=576px) {
     header {
         display: none;
@@ -239,6 +257,10 @@ body {
 
     .parallax-container {
         margin-top: 0px;
+    }
+
+    .row {
+        padding: 50px;
     }
 
 }
