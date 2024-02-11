@@ -1,17 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+/* Barra de rolagem padrão */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Largura da barra de rolagem */
+}
+
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #363636;
+    /* Cinza bem escuro */
+}
+
+/* Cor da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #03A5E4;
+    /* Azul */
+    border-radius: 6px;
+    /* Borda arredondada */
+}
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-.secao1{
+.secao1 {
     background-image: url(/img/background/background-2.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -25,12 +46,14 @@ html, body{
     position: relative;
 }
 
-.secao1 .background-master{
+.secao1 .background-master {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Ou largura desejada */
-    height: 100%; /* Ou altura desejada */
+    width: 100%;
+    /* Ou largura desejada */
+    height: 100%;
+    /* Ou altura desejada */
     padding-top: 1%;
     padding-left: 8%;
     padding-right: 8%;
@@ -39,25 +62,26 @@ html, body{
     z-index: 1;
 }
 
-.secao1 .background-master header{
+.secao1 .background-master header {
     display: flex;
     justify-content: space-between;
 }
 
-.secao1 .background-master header .logo a{
+.secao1 .background-master header .logo a {
     text-decoration: none;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
-.secao1 .background-master header .logo{
+.secao1 .background-master header .logo {
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid transparent;
@@ -65,37 +89,45 @@ html, body{
     z-index: 2;
 }
 
-.secao1 .background-master header .logo h1{
+.secao1 .background-master header .logo h1 {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 30px;
-    animation: fadeEffect2 10s infinite; 
+    animation: fadeEffect2 10s infinite;
 }
 
 @keyframes fadeEffect2 {
-    0% { color: #D5DFE9; } 
-    50% { color: #03A5E4; } 
-    100% { color: #D5DFE9; } 
+    0% {
+        color: #D5DFE9;
+    }
+
+    50% {
+        color: #03A5E4;
+    }
+
+    100% {
+        color: #D5DFE9;
+    }
 }
 
-.secao1 .background-master header .organizacao{
+.secao1 .background-master header .organizacao {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.secao1 .background-master header .organizacao nav{
+.secao1 .background-master header .organizacao nav {
     display: flex;
     justify-content: center;
     flex-direction: row;
     overflow: hidden;
     white-space: nowrap;
     z-index: 2;
-        
+
     animation: typing 1s steps(400, end);
 }
 
-.secao1 .background-master header .organizacao nav .link-1{
-    margin-right:20px ;
+.secao1 .background-master header .organizacao nav .link-1 {
+    margin-right: 20px;
     text-decoration: none;
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 600;
@@ -103,41 +135,41 @@ html, body{
     transition: color 0.3s ease-in;
 }
 
-.secao1 .background-master header .organizacao nav .link{
-    margin-right:20px ;
+.secao1 .background-master header .organizacao nav .link {
+    margin-right: 20px;
     text-decoration: none;
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 600;
     color: #03A5E4;
 }
 
-.secao1 header .organizacao nav .link-1:hover{
+.secao1 header .organizacao nav .link-1:hover {
     color: #03A5E4;
 }
 
-.parte2_da_secao1{
+.parte2_da_secao1 {
     height: 90%;
     display: flex;
     justify-content: space-between;
 }
 
-.parte2_da_secao1 .organizacao{
+.parte2_da_secao1 .organizacao {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
 }
 
-.parte2_da_secao1 .part1{
+.parte2_da_secao1 .part1 {
     width: 50%;
 }
 
-.parte2_da_secao1 .part2{
+.parte2_da_secao1 .part2 {
     display: flex;
     flex: 1;
 }
 
-.parte2_da_secao1 .organizacao .background{
+.parte2_da_secao1 .organizacao .background {
     display: flex;
     width: 100%;
     justify-content: right;
@@ -149,43 +181,51 @@ html, body{
 .parte2_da_secao1 .organizacao .background img {
     width: 350px;
     height: 350px;
-    opacity: 1; 
-    animation: fadeEffect 5s infinite; 
+    opacity: 1;
+    animation: fadeEffect 5s infinite;
     border-radius: 50%;
     margin-right: 10%;
 }
 
 @keyframes fadeEffect {
-    0% { opacity: 0.5; } 
-    50% { opacity: 1; } 
-    100% { opacity: 0.5; } 
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
 }
 
-.parte2_da_secao1 .part1 h2{
+.parte2_da_secao1 .part1 h2 {
     color: #EDEDF1;
     font-family: "Noto Sans KR", sans-serif;
     font-size: 40px;
     font-weight: 900;
     overflow: hidden;
     white-space: nowrap;
-        
+
     animation: typing 2s steps(400, end);
 }
 
-.parte2_da_secao1 .part1 h3{
+.parte2_da_secao1 .part1 h3 {
     font-family: "Noto Sans KR", sans-serif;
     color: #02A3E9;
     font-size: 28px;
     font-weight: 700;
-    opacity: 1; 
-    animation: fadeEffect 5s infinite; 
+    opacity: 1;
+    animation: fadeEffect 5s infinite;
     overflow: hidden;
     white-space: nowrap;
-        
+
     animation: typing 2s steps(400, end);
 }
 
-.parte2_da_secao1 .part1 p{
+.parte2_da_secao1 .part1 p {
     width: 90%;
     font-family: "Noto Sans KR", sans-serif;
     color: #EDEDF1;
@@ -200,15 +240,16 @@ html, body{
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-.parte2_da_secao1 .part1 .botoes{
+.parte2_da_secao1 .part1 .botoes {
     display: flex;
     justify-content: left;
     flex-direction: row;
@@ -217,7 +258,7 @@ html, body{
     animation: fadeIn 1s ease forwards;
 }
 
-.parte2_da_secao1 .part1 .botoes .link{
+.parte2_da_secao1 .part1 .botoes .link {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
@@ -229,18 +270,19 @@ html, body{
     font-weight: 900;
 }
 
-.parte2_da_secao1 .part1 .botoes .link-1{
+.parte2_da_secao1 .part1 .botoes .link-1 {
     background-color: #02A3E9;
     border-radius: 10px;
     color: #091B2A;
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
-.parte2_da_secao1 .part1 .botoes .link-1:hover{
+.parte2_da_secao1 .part1 .botoes .link-1:hover {
     background-color: rgb(1, 128, 182);
     color: white;
 }
-.parte2_da_secao1 .part1 .botoes .link-2{
+
+.parte2_da_secao1 .part1 .botoes .link-2 {
     border: 2px solid;
     border-color: #02A3E9;
     border-radius: 10px;
@@ -248,22 +290,22 @@ html, body{
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
-.parte2_da_secao1 .part1 .botoes .link-2:hover{
+.parte2_da_secao1 .part1 .botoes .link-2:hover {
     background-color: rgb(1, 128, 182);
     border-color: transparent;
     color: white;
 }
 
-@media (width <= 576px){
-    .secao1 .background-master header{
+@media (width <=576px) {
+    .secao1 .background-master header {
         display: none;
     }
 
-    .parte2_da_secao1 .part2{
+    .parte2_da_secao1 .part2 {
         display: none;
     }
 
-    .parte2_da_secao1 .part1{
+    .parte2_da_secao1 .part1 {
         width: 100%;
     }
 
@@ -279,21 +321,22 @@ html, body{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: center; /* Para centralizar horizontalmente */
+        justify-content: center;
+        /* Para centralizar horizontalmente */
     }
 
-    .parte2_da_secao1 .part1 .botoes .link{
+    .parte2_da_secao1 .part1 .botoes .link {
         width: 100%;
         text-align: center;
         margin: auto;
     }
 
-    .parte2_da_secao1 .part1 .botoes .link-1{
+    .parte2_da_secao1 .part1 .botoes .link-1 {
         width: auto;
         text-align: center;
     }
 
-    .parte2_da_secao1 .part1 .botoes .link-2{
+    .parte2_da_secao1 .part1 .botoes .link-2 {
         width: auto;
         text-align: center;
     }
