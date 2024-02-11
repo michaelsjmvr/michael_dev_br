@@ -75,10 +75,8 @@ body {
 }
 
 .navbar-nav .nav-item {
-    animation: typing 10s steps(300, end);
+    animation: typing 5s steps(300, end);
 }
-
-
 
 /* Estilos para o logotipo */
 .topo-menu .logo h1 {
