@@ -62,26 +62,7 @@ body {
     z-index: 1;
 }
 
-.secao1 .background-master header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.secao1 .background-master header .logo a {
-    text-decoration: none;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-.secao1 .background-master header .logo {
+.caixa-principal .caixa-sub2 {
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid transparent;
@@ -89,7 +70,17 @@ body {
     z-index: 2;
 }
 
-.secao1 .background-master header .logo h1 {
+@keyframes typing {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.caixa-principal .caixa-sub2 h2 {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 30px;
     animation: fadeEffect2 10s infinite;
@@ -109,41 +100,20 @@ body {
     }
 }
 
-.secao1 .background-master header .organizacao {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.caixa-principal .caixa-sub .organizacao {
+    animation: typing 2s steps(500, end);
 }
 
-.secao1 .background-master header .organizacao nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    overflow: hidden;
-    white-space: nowrap;
-    z-index: 2;
-
-    animation: typing 1s steps(400, end);
+.caixa-principal .caixa-sub .ativo {
+    color: #03A5E4;
 }
 
-.secao1 .background-master header .organizacao nav .link-1 {
-    margin-right: 20px;
-    text-decoration: none;
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 600;
+.caixa-principal .caixa-sub .link {
     color: #D5DFE9;
     transition: color 0.3s ease-in;
 }
 
-.secao1 .background-master header .organizacao nav .link {
-    margin-right: 20px;
-    text-decoration: none;
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 600;
-    color: #03A5E4;
-}
-
-.secao1 header .organizacao nav .link-1:hover {
+.caixa-principal .caixa-sub .link:hover {
     color: #03A5E4;
 }
 
@@ -297,7 +267,7 @@ body {
 }
 
 @media (width <=576px) {
-    .secao1 .background-master header {
+    .caixa-principal{
         display: none;
     }
 
