@@ -102,6 +102,7 @@ body {
 
 .caixa-principal .caixa-sub .organizacao {
     animation: typing 2s steps(500, end);
+    z-index: 999;
 }
 
 .caixa-principal .caixa-sub .ativo {
