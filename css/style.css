@@ -30,6 +30,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 .secao1 {
@@ -81,7 +82,7 @@ body {
 }
 
 .caixa-principal .caixa-sub2 h2 {
-    font-family: "Noto Sans KR", sans-serif;
+    
     font-size: 30px;
     animation: fadeEffect2 10s infinite;
 }
