@@ -1,115 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desenvolvedor diferenciado</title>
     <meta name="description" content="Página inicial - Portfólio do Michael Douglas, desenvolvedor full stack">
     <link rel="stylesheet" href="/css/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-    <section class="secao1">
-        <div class="background-master">
-            <div>
-                <header>
-                    <div class="logo">
-                        <a href="https://michaeldouglas.dev.br/">
-                            <h1>Michael.</h1>
-                        </a>
-                    </div>
-                    <div class="organizacao">
-                        <nav>
-                            <a href="https://michaeldouglas.dev.br/" class="link-1 number-1">Página Inicial</a>
-                            <a href="/sobre.html" class="link number-2">Sobre Mim</a>
-                            <a href="/projeto.html" class="link-1 number-3">Projetos</a>
-                            <a href="/curriculo.html" class="link-1 number-4">Currículo</a>
-                            <a href="/contato.html" class="link-1 number-5">Contato</a>
-                        </nav>
-                    </div>
-                </header>
+    <header class="container topo-menu">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="logo">
+                    <a href="https://michaeldouglas.dev.br/" class="text-decoration-none">
+                        <h1 class="typing-animation">Michael.</h1>
+                    </a>
+                </div>
             </div>
-            <div class="container">
-                <div class="topo">
-                    <div class="row">
-                        <p><span>Citação favorita</span></p>
-                        <h2>"A inovação é o que distingue um líder de um seguidor."</h2>
-                        <p>- Steve Jobs</p>
+            <div class="col-md-6">
+                <div class="organizacao text-center">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://michaeldouglas.dev.br/">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/sobre.html">Sobre</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/projeto.html">Projetos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/curriculo.html">Currículo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contato.html">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="parallax-container background-image1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 history parte1">
+                    <div>
+                        <p><span>My history</span></p>
+                        <h2>Minha história</h2>
+                        <p>E aí, tudo bem? Me chamo Michael, ou se preferir, Mike. Tenho 30 anos de idade e já tive
+                            bastante experiência na vida. Trabalhei em uma lan house, inclusive foi lá que comecei a
+                            me interessar por computadores. Ficava observando o técnico fazer a manutenção e ele acabou
+                            me explicando o que era memória, HD, placa-mãe, placa de vídeo e por aí vai. Com isso, na
+                            época, cursei Montagem e Manutenção de Micro. Devo admitir que foi fácil, porque eu já tinha
+                            montado meu próprio computador e estudado muito por conta própria.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 history parte2">
+                    <p>Trabalhei por muito tempo prestando serviços para empresas como técnico e, conforme fui
+                        mudando de serviço, acabei ganhando uma curiosidade: como eram criados os sites. Acabei
+                        aprendendo por conta própria, do jeito mais difícil, com WordPress puro. Depois, aprendi a
+                        utilizar o Elementor, o que facilitou muito minha vida hehehe. Então, acabei trabalhando em
+                        uma empresa de hospedagem de sites e VPS, onde adquiri bastante conhecimento em sistemas
+                        operacionais Linux, porque cuidávamos dos servidores e eles eram Linux.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax-container background-image2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 history parte1">
+                    <div>
+                        <p>Depois de fazer tantas manutenções em sites, acabei encontrando um site de automação
+                            comercial,
+                            despertando mais uma curiosidade sobre como funcionava. Por ironia do destino, acabei
+                            encontrando
+                            um trabalho em uma empresa de automação comercial. Comecei a lidar com os clientes
+                            presencialmente,
+                            fazendo instalações, manutenções, ouvindo-os e entendendo suas necessidades.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 history parte2">
+                    <p>Com isso, surgiu outra curiosidade: como é feito um software. Queria achar uma forma de fazer um
+                        software
+                        melhor do que já existia, sabendo o que os clientes precisavam. Então, pela primeira vez,
+                        consegui realizar
+                        um sonho: entrar na faculdade de Análise e Desenvolvimento de Sistemas, onde estou aprendendo
+                        muito.
+                        Por conta própria, comecei a estudar uma linguagem muito gostosa de aprender e acabei me
+                        aprofundando nela,
+                        que é a linguagem Python. Com ela, aprendi uma biblioteca chamada PySide | PyQt e consegui
+                        desenvolver meus
+                        softwares desktop.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax-container background-image3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 history parte1">
+                    <div>
+                        <p>Mas chegou o momento em que tive que escolher entre dar continuidade ao meu projeto de
+                            automação ou
+                            procurar emprego. Optei por procurar emprego, porque sem ele não consigo concluir meu sonho,
+                            que é
+                            a minha faculdade. Coloquei na cabeça que, por mais ambicioso que eu seja, tenho que
+                            conquistar uma coisa
+                            de cada vez. Esta é a minha longa e resumida história rs.</p>
                     </div>
                 </div>
             </div>
-            <div class="container_2">
-                <div class="esquerda">
-                    <div class="topo">
-                        <div class="row">
-                            <div class="kit">
-                                <p><span class="mini">My skills</span></p>
-                                <h2>Minhas habilidades</h2>
-                                <div>
-                                    <div class="prossess-ber-plugin">
-                                        <span class="prosses-bar titulo">HTML5</span>
-                                        <div id="bar1" class="barfiller">
-                                            <div class="tipWrap" style="display: inline;">
-                                                <span class="tip" style="left: 88%; transition: left 3s ease-in-out 0s;">100%</span>
-                                            </div>
-                                            <span class="fill my-class" data-percentage="100" style="background: #03A5E4; width: 100%; transition: width 3s ease-in-out 0s;"></span>
-                                        </div>
-                                        <span class="prosses-bar titulo">CSS3</span>
-                                        <div id="bar2" class="barfiller">
-                                            <div class="tipWrap" style="display: inline;">
-                                                <span class="tip" style="left: 80%; transition: left 2s ease-in-out 0s;">90%</span>
-                                            </div>
-                                            <span class="fill my-class3" data-percentage="90" style="background: #03A5E4; width: 100%; transition: width 2s ease-in-out 0s;"></span>
-                                        </div>
-                                        <span class="prosses-bar titulo">JAVASCRIPT</span>
-                                        <div id="bar3" class="barfiller">
-                                            <div class="tipWrap" style="display: inline;">
-                                                <span class="tip" style="left: 77%; transition: left 4s ease-in-out 0s;">87%</span>
-                                            </div>
-                                            <span class="fill my-class3" data-percentage="87" style="background: #03A5E4; width: 100%; transition: width 4s ease-in-out 0s;"></span>
-                                        </div>
-                                        <span class="prosses-bar titulo">GIT</span>
-                                        <div id="bar4" class="barfiller">
-                                            <div class="tipWrap" style="display: inline;">
-                                                <span class="tip" style="left: 68%; transition: left 1s ease-in-out 0s;">78%</span>
-                                            </div>
-                                            <span class="fill my-class3" data-percentage="78" style="background: #03A5E4; width: 100%; transition: width 1s ease-in-out 0s;"></span>
-                                        </div>
-                                        <span class="prosses-bar titulo">PYTHON 3</span>
-                                        <div id="bar5" class="barfiller">
-                                            <div class="tipWrap" style="display: inline;">
-                                                <span class="tip" style="left: 88%; transition: left 2s ease-in-out 0s;">100%</span>
-                                            </div>
-                                            <span class="fill my-class3" data-percentage="100" style="background: #03A5E4; width: 100%; transition: width 2s ease-in-out 0s;"></span>
-                                        </div>
-                                        <span class="prosses-bar titulo">NODEJS</span>
-                                        <div id="bar5" class="barfiller">
-                                            <div class="tipWrap" style="display: inline;">
-                                                <span class="tip" style="left: 70%; transition: left 2s ease-in-out 0s;">80%</span>
-                                            </div>
-                                            <span class="fill my-class3" data-percentage="80" style="background: #03A5E4; width: 100%; transition: width 2s ease-in-out 0s;"></span>
-                                        </div>
-                                        <span class="prosses-bar titulo">PHP</span>
-                                        <div id="bar5" class="barfiller">
-                                            <div class="tipWrap" style="display: inline;">
-                                                <span class="tip" style="left: 20%; transition: left 2s ease-in-out 0s;">30%</span>
-                                            </div>
-                                            <span class="fill my-class3" data-percentage="30" style="background: #03A5E4; width: 100%; transition: width 2s ease-in-out 0s;"></span>
-                                        </div>
-                                        <span class="prosses-bar titulo">WORDPRESS</span>
-                                        <div id="bar5" class="barfiller">
-                                            <div class="tipWrap" style="display: inline;">
-                                                <span class="tip" style="left: 60%; transition: left 2s ease-in-out 0s;">70%</span>
-                                            </div>
-                                            <span class="fill my-class3" data-percentage="70" style="background: #03A5E4; width: 100%; transition: width 2s ease-in-out 0s;"></span>
-                                        </div>
-                                        <span class="prosses-bar titulo">ELEMENTOR</span>
-                                        <div id="bar5" class="barfiller">
-                                            <div class="tipWrap" style="display: inline;">
-                                                <span class="tip" style="left: 88%; transition: left 2s ease-in-out 0s;">100%</span>
-                                            </div>
-                                            <span class="fill my-class3" data-percentage="100" style="background: #03A5E4; width: 100%; transition: width 2s ease-in-out 0s;"></span>
-                                        </div>
+        </div>
+    </section>
+    <section class="secao1">
+        <div class="background-master">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="kit">
+                            <p>My skills</p>
+                            <h2>Minhas habilidades</h2>
+                            <div class="prossess-bar-plugin">
+                                <div class="progress mb-3">
+                                    <span class="prosses-bar titulo">HTML5</span>
+                                    <div class="progress-bar my-class bg-success" role="progressbar"
+                                        style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                     </div>
+                                    <span class="percentage">100%</span>
+                                </div>
+                                <div class="progress mb-3">
+                                    <span class="prosses-bar titulo">CSS3</span>
+                                    <div class="progress-bar my-class3 bg-primary" role="progressbar"
+                                        style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                    <span class="percentage">90%</span>
+                                </div>
+                                <div class="progress mb-3">
+                                    <span class="prosses-bar titulo">JavaScript</span>
+                                    <div class="progress-bar my-class3 bg-primary" role="progressbar"
+                                        style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                    <span class="percentage">87%</span>
+                                </div>
+                                <div class="progress mb-3">
+                                    <span class="prosses-bar titulo">GIT</span>
+                                    <div class="progress-bar my-class3 bg-warning" role="progressbar"
+                                        style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                    <span class="percentage">78%</span>
+                                </div>
+                                <div class="progress mb-3">
+                                    <span class="prosses-bar titulo">Python 3</span>
+                                    <div class="progress-bar my-class3 bg-success" role="progressbar"
+                                        style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                    <span class="percentage">100%</span>
+                                </div>
+                                <div class="progress mb-3">
+                                    <span class="prosses-bar titulo">Node.js</span>
+                                    <div class="progress-bar my-class3 bg-primary" role="progressbar"
+                                        style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                    <span class="percentage">80%</span>
+                                </div>
+                                <div class="progress mb-3">
+                                    <span class="prosses-bar titulo">PHP</span>
+                                    <div class="progress-bar my-class3 bg-danger" role="progressbar" style="width: 30%;"
+                                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                    <span class="percentage">30%</span>
+                                </div>
+                                <div class="progress mb-3">
+                                    <span class="prosses-bar titulo">WordPress</span>
+                                    <div class="progress-bar my-class3 bg-warning" role="progressbar"
+                                        style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                    <span class="percentage">70%</span>
+                                </div>
+                                <div class="progress mb-3">
+                                    <span class="prosses-bar titulo">Elementor</span>
+                                    <div class="progress-bar my-class3 bg-success" role="progressbar"
+                                        style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                    <span class="percentage">100%</span>
                                 </div>
                             </div>
                         </div>
@@ -119,5 +203,9 @@
         </div>
     </section>
     <script src="/javascript/script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

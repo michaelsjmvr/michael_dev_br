@@ -9,66 +9,30 @@
 html, body{
     width: 100%;
     height: 100%;
-}
-
-.secao1{
-    background-image: url(/img/background/background-1.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 130%;
-    padding-top: 1%;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-bottom: 0%;
-    position: relative;
-}
-
-.secao1 .background-master{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Ou largura desejada */
-    height: 100%; /* Ou altura desejada */
-    padding-top: 1%;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-bottom: 0%;
-    background-color: rgba(9, 27, 42, 0.288);
-    z-index: 1;
-}
-
-.secao1 .background-master header{
-    display: flex;
-    justify-content: space-between;
-}
-
-.secao1 .background-master header .logo a{
-    text-decoration: none;
+    overflow-x: hidden;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
   }
-  to {
-    width: 100%;
-  }
-}
 
-.secao1 .background-master header .logo{
+  .topo-menu .logo{
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid transparent;
-    animation: typing 10s steps(300, end);
+    animation: typing 5s steps(300, end);
     z-index: 2;
 }
 
-.secao1 .background-master header .logo h1{
+.topo-menu .logo h1{
     font-family: "Noto Sans KR", sans-serif;
     font-size: 30px;
-    animation: fadeEffect2 10s infinite; 
+    animation: fadeEffect2 1s infinite; 
 }
 
 @keyframes fadeEffect2 {
@@ -77,180 +41,178 @@ html, body{
     100% { color: #D5DFE9; } 
 }
 
-.secao1 .background-master header .organizacao{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.navbar-nav .nav-item{
+    animation: typing 4s steps(1000, end);
 }
 
-.secao1 .background-master header .organizacao nav{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    overflow: hidden;
-    white-space: nowrap;
-    z-index: 2;
-        
-    animation: typing 1s steps(400, end);
+
+
+/* Estilos para o logotipo */
+.logo h1 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 30px;
+    animation: fadeEffect2 10s infinite;
 }
 
-.secao1 .background-master header .organizacao nav .link-1{
-    margin-right:20px ;
-    text-decoration: none;
+@keyframes fadeEffect2 {
+    0% {
+        color: #D5DFE9;
+    }
+
+    50% {
+        color: #03A5E4;
+    }
+
+    100% {
+        color: #D5DFE9;
+    }
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-nav .nav-link {
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 600;
     color: #D5DFE9;
     transition: color 0.3s ease-in;
 }
 
-.secao1 .background-master header .organizacao nav .link{
-    margin-right:20px ;
-    text-decoration: none;
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 600;
+.navbar-nav .nav-link:hover {
     color: #03A5E4;
 }
 
-.secao1 header .organizacao nav .link-1:hover{
-    color: #03A5E4;
+.background-image1{
+    margin-top: -110px;
 }
 
-.parte2_da_secao1{
-    height: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.parte2_da_secao1 .organizacao{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.background-master .container{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-}
-
-.background-master .container .topo{
-    display: flex;
-    background-color: #091b2a8f;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.background-master .container .topo .row{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.background-master .container .topo p span{
-    text-align: left;
-    color: #03A5E4;
-    font-size: 0.9rem;
-    font-weight: 500;
-    font-family: "Noto Sans KR", sans-serif;
-}
-
-.background-master .container .topo h2{
-    color: white;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 1./rem;
-}
-
-.background-master .container .topo p{
-    color: white;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 0.9rem;
-    font-weight: 900;
-}
-
-.background-master .container_2{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-width: 400px;
-}
-
-/* Estilo para a barra de progresso */
-.progress-bar {
-    margin: 20px;
-}
-
-.titulo{
-    color: white;
-    font-family: "Noto Sans KR", sans-serif;
-}
-
-.mini{
-    color: white;
-    font-family: "Noto Sans KR", sans-serif;
-}
-
-.row h2{
-    color: #03A5E4;
-    font-family: "Noto Sans KR", sans-serif;
-}
-
-.kit{
-    width: 350px;
-    background-color: #091b2a8f;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-/* Estilo para o rótulo de progresso */
-.progress-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-/* Estilo para a barra de progresso */
-.barfiller {
+.parallax-container {
     position: relative;
-    height: 20px;
-    background-color: white; /* Cor de fundo branca */
-    border-radius: 5px; /* Bordas arredondadas */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    overflow: hidden;
 }
 
-/* Estilo para a barra de preenchimento */
-.fill {
-    display: block;
-    height: 100%;
-    background-color: #03A5E4; /* Cor de preenchimento #03A5E4 */
-    border-radius: 5px; /* Bordas arredondadas */
+.container {
+    position: relative;
+    z-index: 1;
 }
 
-/* Estilo para a porcentagem dentro da barra de progresso */
+.background-image1 {
+    background-image: url(/img/background/background-3.webp);
+}
+
+.background-image2 {
+    background-image: url(/img/background/background-4.webp);
+}
+
+.background-image3 {
+    background-image: url(/img/background/background-5.webp);
+}
+
+.history {
+    color: white;
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+}
+
+.container .row{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.parallax-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parallax-container .container{
+    background-color: rgba(9, 27, 42, 0.795);
+    border-radius: 6px;
+}
+
+.parallax-container .parte2{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+
+.progress {
+    position: relative;
+    text-align: left;
+}
+
+.titulo {
+    position: absolute;
+    left: 40px;
+    transform: translateX(-50%);
+    text-align: left;
+    color: white;
+}
+
+.progress-bar {
+    height: 20px; /* Ajuste a altura conforme necessário */
+}
+
 .percentage {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Cor do texto branco */
+    right: 0%;
 }
 
-/* Estilo para a dica (tooltip) */
-.tip {
+.secao1 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-master {
     position: absolute;
-    padding: 4px 8px;
-    background: #5F5A9B; /* Cor de preenchimento #03A5E4 */
-    color: white; /* Cor do texto branco */
-    border-radius: 4px;
-    font-size: 12px;
-    top: -30px;
-    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%; /* Ajuste conforme necessário */
+    background-image: url(/img/background/background-6.webp); /* Substitua pelo caminho da sua imagem de fundo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Adiciona o efeito de parallax */
+}
+
+.secao1 .kit{
+    background-color: rgba(9, 27, 42, 0.795);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.secao1 .kit h2{
+    color: white;
+}
+
+.secao1 .kit p{
+    color:#03A5E4
 }
 
 @media (width <= 576px){
-    .secao1 .background-master header{
+    header{
         display: none;
     }
+
+    .parallax-container {
+        margin-top: 0px;
+    }
+    
 }
