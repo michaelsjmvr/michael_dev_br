@@ -75,13 +75,13 @@ body {
 }
 
 .navbar-nav .nav-item {
-    animation: typing 4s steps(1000, end);
+    animation: typing 10s steps(300, end);
 }
 
 
 
 /* Estilos para o logotipo */
-.logo h1 {
+.topo-menu .logo h1 {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 30px;
     animation: fadeEffect2 10s infinite;
