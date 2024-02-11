@@ -105,6 +105,10 @@ body {
     background-color: transparent;
 }
 
+.navbar-nav .nav-item .ativado{
+    color: #03A5E4;
+}
+
 .navbar-nav .nav-link {
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 600;
