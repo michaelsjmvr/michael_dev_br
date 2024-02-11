@@ -36,50 +36,25 @@ body {
 
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-.topo-menu .logo {
+.caixa-principal .caixa-sub2 {
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid transparent;
-    animation: typing 5s steps(300, end);
+    animation: typing 10s steps(300, end);
     z-index: 2;
 }
 
-.topo-menu .logo h1 {
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 30px;
-    animation: fadeEffect2 1s infinite;
-}
-
-@keyframes fadeEffect2 {
-    0% {
-        color: #D5DFE9;
+@keyframes typing {
+    from {
+        opacity: 0;
     }
 
-    50% {
-        color: #03A5E4;
-    }
-
-    100% {
-        color: #D5DFE9;
+    to {
+        opacity: 1;
     }
 }
 
-.navbar-nav .nav-item {
-    animation: typing 5s steps(300, end);
-}
-
-/* Estilos para o logotipo */
-.topo-menu .logo h1 {
+.caixa-principal .caixa-sub2 h2 {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 30px;
     animation: fadeEffect2 10s infinite;
@@ -99,23 +74,20 @@ body {
     }
 }
 
-/* Estilos para a barra de navegação */
-.navbar {
-    background-color: transparent;
+.caixa-principal .caixa-sub .organizacao {
+    animation: typing 2s steps(500, end);
 }
 
-.navbar-nav .nav-item .ativado{
+.caixa-principal .caixa-sub .ativo {
     color: #03A5E4;
 }
 
-.navbar-nav .nav-link {
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 600;
+.caixa-principal .caixa-sub .link {
     color: #D5DFE9;
     transition: color 0.3s ease-in;
 }
 
-.navbar-nav .nav-link:hover {
+.caixa-principal .caixa-sub .link:hover {
     color: #03A5E4;
 }
 

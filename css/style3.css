@@ -6,6 +6,26 @@
     box-sizing: border-box;
 }
 
+/* Barra de rolagem padrão */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Largura da barra de rolagem */
+}
+
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #363636;
+    /* Cinza bem escuro */
+}
+
+/* Cor da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #03A5E4;
+    /* Azul */
+    border-radius: 0px;
+    /* Borda arredondada */
+}
+
 html,
 body {
     width: 100%;
