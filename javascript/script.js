@@ -18,18 +18,33 @@ if (window.innerWidth <= 576) {
     document.querySelector('footer').style.display = 'none';
 }
 
+window.onload = function() {
+    var stats = true; // Definindo a variável stats
+
+    if (stats) {
+        audioPlayer.play();
+        playPauseIcon.classList.remove('fa-play');
+        playPauseIcon.classList.add('fa-pause');
+    } else {
+        audioPlayer.pause();
+        playPauseIcon.classList.remove('fa-pause');
+        playPauseIcon.classList.add('fa-play');
+    }
+};
 
 var audioPlayer = document.getElementById('audioPlayer');
-    var playPauseIcon = document.getElementById('playPauseIcon');
+var playPauseIcon = document.getElementById('playPauseIcon');
 
-    function togglePlayPause() {
-        if (audioPlayer.paused) {
-            audioPlayer.play();
-            playPauseIcon.classList.remove('fa-play');
-            playPauseIcon.classList.add('fa-pause');
-        } else {
-            audioPlayer.pause();
-            playPauseIcon.classList.remove('fa-pause');
-            playPauseIcon.classList.add('fa-play');
-        }
+function togglePlayPause() {
+    if (audioPlayer.paused) {
+        audioPlayer.play();
+        playPauseIcon.classList.remove('fa-play');
+        playPauseIcon.classList.add('fa-pause');
+        stats = true; // Atualizando a variável stats
+    } else {
+        audioPlayer.pause();
+        playPauseIcon.classList.remove('fa-pause');
+        playPauseIcon.classList.add('fa-play');
+        stats = false; // Atualizando a variável stats
     }
+}
