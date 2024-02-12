@@ -26,6 +26,10 @@
     /* Borda arredondada */
 }
 
+.custom-cursor {
+    cursor: url('/img/assets/cursor.png'), auto;
+}
+
 html,
 body {
     width: 100%;
