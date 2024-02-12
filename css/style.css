@@ -221,6 +221,10 @@ body {
     }
 }
 
+.parte2_da_secao1 .part1 .botoes a{
+    cursor: pointer;
+}
+
 .parte2_da_secao1 .part1 .botoes {
     display: flex;
     justify-content: left;
@@ -235,7 +239,7 @@ body {
     padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-right: 40px;
+    margin-right: 10px;
     margin-bottom: 20px;
     text-decoration: none;
     font-family: "Noto Sans KR", sans-serif;
@@ -268,7 +272,9 @@ body {
     color: white;
 }
 
-
+.player{
+    display: block;
+}
 /* Mobile */
 
 @media (width <=576px) {
@@ -343,19 +349,18 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: center;
-        /* Para centralizar horizontalmente */
     }
 
     .parte2_da_secao1 .part1 .botoes .link {
         width: 100%;
-        text-align: center;
-        margin: auto;
+        text-align: left;
+        margin-right: 10;
     }
 
     .parte2_da_secao1 .part1 .botoes .link-1 {
         width: auto;
         text-align: center;
+        cursor: pointer;
     }
 
     .parte2_da_secao1 .part1 .botoes .link-2 {

@@ -17,3 +17,19 @@ if (window.innerWidth <= 576) {
     document.querySelector('.menu-header').style.display = 'block';
     document.querySelector('footer').style.display = 'none';
 }
+
+
+var audioPlayer = document.getElementById('audioPlayer');
+    var playPauseIcon = document.getElementById('playPauseIcon');
+
+    function togglePlayPause() {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            playPauseIcon.classList.remove('fa-play');
+            playPauseIcon.classList.add('fa-pause');
+        } else {
+            audioPlayer.pause();
+            playPauseIcon.classList.remove('fa-pause');
+            playPauseIcon.classList.add('fa-play');
+        }
+    }

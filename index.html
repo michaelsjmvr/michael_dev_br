@@ -54,10 +54,12 @@
                         privilégio de navegar nesse universo digital, transformando ideias em realidade através do poder
                         da tecnologia.</p>
                     <div class="botoes">
-                        <a href="https://wa.me/5521982093129?text=Ol%C3%A1%2C%20gostei%20do%20seu%20portf%C3%B3lio"
-                            class="link link-1" target="_blank">Contratar</a>
+                        <a onclick="togglePlayPause()" class="link link-1" target="_blank">
+                            <i id="playPauseIcon" class="fas fa-play"></i> <!-- Ícone padrão de play -->
+                        </a>                        
                         <a href="https://wa.me/5521982093129?text=Ol%C3%A1%2C%20gostei%20do%20seu%20portf%C3%B3lio"
                             class="link link-2" target="_blank">Vamos conversar</a>
+                        <audio id="audioPlayer" src="/mp3/vikings.mp3"></audio>
                     </div>
                 </div>
                 <div class="organizacao part2">
@@ -86,6 +88,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/javascript/script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
 </body>
 
 </html>
