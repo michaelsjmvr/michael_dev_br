@@ -300,6 +300,10 @@ body {
         flex-direction: column;
     }
 
+    footer i{
+        color:#026891;
+    }
+
     footer a {
         text-decoration: none;
         font-family: Noto Sans KR, sans-serif;
@@ -308,6 +312,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        color:#02A3E9;
     }
 
     footer {
