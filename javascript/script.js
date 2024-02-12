@@ -18,18 +18,35 @@ if (window.innerWidth <= 576) {
     document.querySelector('footer').style.display = 'none';
 }
 
-window.onload = function() {
-    var stats = true; // Definindo a variável stats
+var delayTime = 500; // Tempo de espera em milissegundos
 
-    audioPlayer.addEventListener('canplay', function() {
-        setTimeout(function() {
-            togglePlayPause(); // Inicia a reprodução após o tempo de espera
-        }, 1000); // Delay de 1000 milissegundos (1 segundo)
-    });
+var audioPlayer; // Variável para armazenar o elemento de áudio
+var playPauseIcon; // Variável para armazenar o ícone de reprodução/pausa
+var stats = false; // Definindo a variável stats
+
+window.onload = function() {
+    audioPlayer = document.getElementById('audioPlayer'); // Obtendo o elemento de áudio
+    playPauseIcon = document.getElementById('playPauseIcon'); // Obtendo o ícone de reprodução/pausa
+
+    delayTime(); // Chamar a função delayTime
+
+    if (stats === true) {
+        audioPlayer.play();
+        playPauseIcon.classList.remove('fa-play');
+        playPauseIcon.classList.add('fa-pause');
+        stats = true; // Atualizando a variável stats
+    } else {
+        audioPlayer.pause();
+        playPauseIcon.classList.remove('fa-pause');
+        playPauseIcon.classList.add('fa-play');
+        stats = false; // Atualizando a variável stats
+    }
 };
 
-var audioPlayer = document.getElementById('audioPlayer');
-var playPauseIcon = document.getElementById('playPauseIcon');
+function delayTime() {
+    // Aqui você pode definir o que a função deve fazer
+    // Se desejar, você pode adicionar um atraso aqui
+}
 
 function togglePlayPause() {
     if (audioPlayer.paused) {
@@ -44,3 +61,4 @@ function togglePlayPause() {
         stats = false; // Atualizando a variável stats
     }
 }
+
