@@ -310,6 +310,10 @@ body {
         align-items: center;
     }
 
+    footer {
+        display: block !important;
+    }
+
     .menu-header {
         display: none !important;
     }
