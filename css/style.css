@@ -39,7 +39,6 @@ body {
     height: 100%;
     font-family: "Noto Sans KR", sans-serif;
     overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 .secao1 {
@@ -78,6 +77,11 @@ body {
     border-right: 2px solid transparent;
     animation: typing 10s steps(300, end);
     z-index: 2;
+}
+
+.caixa-principal .row{
+    margin-top: -20px;
+    margin-left: -90px;
 }
 
 @keyframes typing {
