@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
+/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -8,27 +9,24 @@
 
 /* Barra de rolagem padrão */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 12px; /* Largura da barra de rolagem */
     z-index: 999;
-    /* Largura da barra de rolagem */
 }
 
 /* Cor de fundo da barra de rolagem */
 ::-webkit-scrollbar-track {
-    background-color: #363636;
-    /* Cinza bem escuro */
+    background-color: #363636; /* Cinza bem escuro */
     z-index: 999;
 }
 
 /* Cor da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background-color: #03A5E4;
+    background-color: #03A5E4; /* Azul */
     z-index: 999;
-    /* Azul */
-    border-radius: 0px;
-    /* Borda arredondada */
+    border-radius: 0px; /* Borda arredondada */
 }
 
+/* Estilos gerais */
 html,
 body {
     width: 100%;
@@ -37,14 +35,16 @@ body {
     font-family: "Noto Sans KR", sans-serif;
 }
 
-header{
+header {
     display: block;
 }
 
+/* Cursor customizado */
 .custom-cursor {
     cursor: url('/img/assets/cursor.png'), auto;
 }
 
+/* Animação para o título da caixa principal */
 .caixa-principal .caixa-sub2 {
     overflow: hidden;
     white-space: nowrap;
@@ -63,6 +63,7 @@ header{
     }
 }
 
+/* Animação para o título da caixa principal */
 .caixa-principal .caixa-sub2 h2 {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 30px;
@@ -83,10 +84,12 @@ header{
     }
 }
 
+/* Animação para a organização */
 .caixa-principal .caixa-sub .organizacao {
     animation: typing 2s steps(500, end);
 }
 
+/* Estilos dos links de navegação */
 .caixa-principal .caixa-sub .ativo {
     color: #03A5E4;
 }
@@ -100,10 +103,12 @@ header{
     color: #03A5E4;
 }
 
+/* Estilos específicos para a primeira seção de parallax */
 .background-image1 {
     margin-top: -110px;
 }
 
+/* Estilos das seções de parallax */
 .parallax-container {
     position: relative;
     background-position: center;
@@ -116,10 +121,12 @@ header{
     justify-content: center;
 }
 
+/* Ajuste de z-index para garantir que os elementos dentro das seções estejam abaixo do véu */
 .container {
-    z-index: 1; /* Ajustado para garantir que os elementos dentro das seções estejam abaixo do véu */
+    z-index: 1;
 }
 
+/* Estilos das imagens de fundo das seções */
 .background-image1 {
     background-image: url(/img/background/background-3.webp);
 }
@@ -132,6 +139,7 @@ header{
     background-image: url(/img/background/background-5.webp);
 }
 
+/* Estilos dos elementos dentro das seções */
 .history {
     color: white;
     font-family: "Noto Sans KR", sans-serif;
@@ -153,91 +161,8 @@ header{
     justify-content: center;
 }
 
-.parallax-container {
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 110vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.container {
-    position: relative;
-    z-index: 2;
-}
-
-.container .row {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.parallax-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.parallax-container .container {
-    border-radius: 6px;
-}
-
-.parallax-container .parte2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.progress {
-    position: relative;
-    text-align: left;
-}
-
-.titulo {
-    position: absolute;
-    left: 40px;
-    transform: translateX(-50%);
-    text-align: left;
-    color: white;
-    font-family: "Noto Sans KR", sans-serif;
-}
-
-.progress-bar {
-    height: 20px;
-    /* Ajuste a altura conforme necessário */
-}
-
-.percentage {
-    position: absolute;
-    right: 0%;
-}
-
-.secao1 {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.secao1 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 50%;
-}
-
-.parallax-container span {
-    color: #03A5E4;
-}
-
-@media (width <=576px) {
+/* Estilos responsivos para telas menores */
+@media (max-width: 576px) {
     footer {
         display: flex;
         flex-direction: row;
@@ -260,13 +185,13 @@ header{
         margin-right: 5px;
     }
 
-    footer .link{
+    footer .link {
         display: flex;
         flex-direction: column;
     }
 
-    footer i{
-        color:#026891;
+    footer i {
+        color: #026891;
     }
 
     footer a {
@@ -277,7 +202,7 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
-        color:#02A3E9;
+        color: #02A3E9;
     }
 
     footer {
@@ -295,5 +220,4 @@ header{
     .row {
         padding: 50px;
     }
-
 }

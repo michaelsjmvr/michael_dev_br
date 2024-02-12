@@ -2,32 +2,39 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Definição do tipo de documento e idioma -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página e descrição -->
     <title>Desenvolvedor diferenciado</title>
     <meta name="description" content="Página inicial - Portfólio do Michael Douglas, desenvolvedor full stack">
+    <!-- Estilos -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body class="custom-cursor">
-    <section  style="z-index: 999;" id="particles-js" class="secao1">
+    <!-- Seção principal com partículas -->
+    <section style="z-index: 999;" id="particles-js" class="secao1">
         <div class="background-master">
+            <!-- Caixa principal -->
             <div class="container-lg caixa-principal">
+                <!-- Linha com colunas -->
                 <div style="display: flex; flex-direction: row; justify-content: space-between;" class="row">
+                    <!-- Coluna do logo -->
                     <div style="display: flex; flex-direction: column; justify-content: center; padding: 20px;"
                         class="col-md-4 caixa-sub2">
                         <a style="text-decoration: none;" href="https://michaeldouglas.dev.br/">
                             <h2 style="z-index: 999;">Michael.</h2>
                         </a>
                     </div>
+                    <!-- Coluna do menu -->
                     <div style="display: flex; flex-direction: column; justify-content: center; z-index: 9999;"
                         class="col-md-8 caixa-sub">
                         <div style="z-index: 9999;" class="organizacao">
-                            <!-- Menu header -->
+                            <!-- Menu de navegação -->
                             <nav class="menu-header" style="text-align: end; padding: 20px;">
                                 <a style="text-decoration: none; font-family: Noto Sans KR, sans-serif; margin-right: 20px; font-weight: 600; "
                                     href="https://michaeldouglas.dev.br/" class="ativo">Inicio</a>
@@ -44,8 +51,10 @@
                     </div>
                 </div>
             </div>
+            <!-- Parte 2 da seção 1 -->
             <div class="parte2_da_secao1 background-master">
                 <div class="organizacao part1">
+                    <!-- Textos de apresentação -->
                     <div>
                         <h2>Olá, Eu sou <br>Michael Douglas</h2>
                         <h3>Desenvolvedor Full Stack</h3>
@@ -53,15 +62,17 @@
                     <p>Cada desafio é uma oportunidade de criar algo único. Como desenvolvedor Full Stack, tenho o
                         privilégio de navegar nesse universo digital, transformando ideias em realidade através do poder
                         da tecnologia.</p>
+                    <!-- Botões -->
                     <div class="botoes">
                         <a onclick="togglePlayPause()" class="link link-1" target="_blank">
-                            <i id="playPauseIcon" class="fas fa-play"></i> <!-- Ícone padrão de play -->
-                        </a>                        
+                            <i id="playPauseIcon" class="fas fa-play"></i>
+                        </a>
                         <a href="https://wa.me/5521982093129?text=Ol%C3%A1%2C%20gostei%20do%20seu%20portf%C3%B3lio"
                             class="link link-2" target="_blank">Vamos conversar</a>
                         <audio id="audioPlayer" src="/mp3/vikings.mp3"></audio>
                     </div>
                 </div>
+                <!-- Imagem -->
                 <div class="organizacao part2">
                     <div class="background">
                         <img src="/img/foto/foto2.webp" alt="">
@@ -69,26 +80,30 @@
                 </div>
             </div>
         </div>
-        <!-- Menu footer -->
+        <!-- Rodapé mobile -->
         <footer>
             <nav>
-                <a class="link" style="text-decoration: none;" href="https://michaeldouglas.dev.br/"><i class="fas fa-home"></i> Início</a>
-                <a class="link" style="text-decoration: none;" href="/sobre.html"><i class="fas fa-info-circle"></i> Sobre</a>
-                <a class="link" style="text-decoration: none;" href="/projeto.html"><i class="fas fa-code"></i> Projetos</a>
-                <a class="link" style="text-decoration: none;" href="/curriculo.html"><i class="fas fa-id-card"></i> Currículo</a>
-                <a class="link" style="text-decoration: none;" href="/contato.html"><i class="fas fa-envelope"></i> Contato</a>
+                <a class="link" style="text-decoration: none;" href="https://michaeldouglas.dev.br/"><i
+                        class="fas fa-home"></i> Início</a>
+                <a class="link" style="text-decoration: none;" href="/sobre.html"><i class="fas fa-info-circle"></i>
+                    Sobre</a>
+                <a class="link" style="text-decoration: none;" href="/projeto.html"><i class="fas fa-code"></i>
+                    Projetos</a>
+                <a class="link" style="text-decoration: none;" href="/curriculo.html"><i class="fas fa-id-card"></i>
+                    Currículo</a>
+                <a class="link" style="text-decoration: none;" href="/contato.html"><i class="fas fa-envelope"></i>
+                    Contato</a>
             </nav>
         </footer>
     </section>
-    <!-- Enlace al archivo JavaScript de Particle.js -->
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Tu archivo JavaScript personalizado -->
     <script src="/javascript/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/javascript/script.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
 
 </body>
 
