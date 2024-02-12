@@ -147,10 +147,14 @@ body {
 }
 
 .caixas-skills{
-    width: 100%;
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.caixas-skills span{
+    font-size: 0.7rem;
 }
 
 .skill{
@@ -158,8 +162,8 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background-color:#091b2a91;
     margin: 10px;
     border-radius: 50%;
