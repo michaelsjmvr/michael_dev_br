@@ -268,9 +268,37 @@ body {
     color: white;
 }
 
+
+/* Mobile */
+
 @media (width <=576px) {
-    .caixa-principal {
-        display: none;
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: end;
+        z-index: 999;
+    }
+
+    footer a {
+        text-decoration: none;
+        font-family: Noto Sans KR, sans-serif;
+        margin-right: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .menu-footer {
+        display: block !important;
+        z-index: 9999 !important;
+    }
+
+    .menu-header {
+        display: none !important;
     }
 
     .parte2_da_secao1 .part2 {
