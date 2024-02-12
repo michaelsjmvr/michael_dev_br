@@ -32,8 +32,10 @@ body {
     height: 100%;
     overflow-x: hidden;
     font-family: "Noto Sans KR", sans-serif;
+}
 
-
+.custom-cursor {
+    cursor: url('/img/assets/cursor.png'), auto;
 }
 
 .caixa-principal .caixa-sub2 {
