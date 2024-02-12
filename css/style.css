@@ -9,12 +9,14 @@
 /* Barra de rolagem padrão */
 ::-webkit-scrollbar {
     width: 12px;
+    z-index: 1;
     /* Largura da barra de rolagem */
 }
 
 /* Cor de fundo da barra de rolagem */
 ::-webkit-scrollbar-track {
     background-color: #363636;
+    z-index: 1;
     /* Cinza bem escuro */
 }
 
@@ -23,6 +25,7 @@
     background-color: #03A5E4;
     /* Azul */
     border-radius: 0px;
+    z-index: 1;
     /* Borda arredondada */
 }
 
@@ -290,7 +293,7 @@ body {
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: #091b2ad8;
+        background-color: #091b2a;
         padding: 20px;
         text-align: center;
         z-index: 999;
