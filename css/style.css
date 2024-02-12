@@ -286,6 +286,10 @@ body {
 
 @media (width <=576px) {
 
+    .caixa-principal{
+        display: none;
+    }
+
     footer {
         display: flex;
         flex-direction: row;
