@@ -30,6 +30,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .custom-cursor {
@@ -109,6 +110,61 @@ body {
     display: none;
 }
 
+.organizacao1{
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.container-article1-section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background-section1 .article1-section1 .container-article1-section1 .box1 {
+    padding-top: 22%;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.container-article1-section1 .box1 span{
+    color:#02A3E9;
+    margin: 0;
+}
+
+.container-article1-section1 .box1 p,h1{
+    color: white;
+    margin: 0;
+
+}
+
+.row.box2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as colunas */
+}
+
+.col-1 {
+    flex: 0 0 calc(20% - 20px); /* Define a largura de cada coluna */
+    margin: 10px; /* Adiciona um espaçamento entre as colunas */
+    text-align: center;
+    background-color: #091b2aab;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill i {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
 @media (width <=576px) {
     .menu-desktop{
         display: none;
@@ -166,5 +222,22 @@ body {
 
     .menu-header {
         display: none !important;
+    }
+
+    .background-section1 .article1-section1 .container-article1-section1 .box1 {
+        padding-top: 50%;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .col-1 {
+        margin: 25px; /* Adiciona um espaçamento entre as colunas */
+        text-align: center;
+        background-color: #091b2a00;
+        border-radius: 5%;
+    }
+
+    .box2{
+        background-color: #091b2a94;
     }
 }
