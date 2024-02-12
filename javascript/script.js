@@ -22,11 +22,11 @@ window.onload = function() {
     var stats = true; // Definindo a variável stats
 
     if (stats) {
-        audioPlayer.play();
+        audioPlayer.pause();
         playPauseIcon.classList.remove('fa-play');
         playPauseIcon.classList.add('fa-pause');
     } else {
-        audioPlayer.pause();
+        audioPlayer.play();
         playPauseIcon.classList.remove('fa-pause');
         playPauseIcon.classList.add('fa-play');
     }
