@@ -235,6 +235,9 @@ body {
         text-align: center;
         background-color: #091b2a00;
         border-radius: 5%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .box2{
