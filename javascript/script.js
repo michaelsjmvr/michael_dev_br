@@ -21,15 +21,11 @@ if (window.innerWidth <= 576) {
 window.onload = function() {
     var stats = true; // Definindo a variável stats
 
-    if (stats) {
-        audioPlayer.pause();
-        playPauseIcon.classList.remove('fa-play');
-        playPauseIcon.classList.add('fa-pause');
-    } else {
-        audioPlayer.play();
-        playPauseIcon.classList.remove('fa-pause');
-        playPauseIcon.classList.add('fa-play');
-    }
+    audioPlayer.addEventListener('canplay', function() {
+        setTimeout(function() {
+            togglePlayPause(); // Inicia a reprodução após o tempo de espera
+        }, 1000); // Delay de 1000 milissegundos (1 segundo)
+    });
 };
 
 var audioPlayer = document.getElementById('audioPlayer');
