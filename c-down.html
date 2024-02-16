@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+    <script src="https://kit.fontawesome.com/5b66564537.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-family: sans-serif;
+            padding-bottom: 10px;
+        }
+
+        body a{
+            text-decoration: none;
+            color: blue;
+        }
+
+        .container-esquerda .caixa .especial{
+            color: blue;
+            font-weight: 500;
+        }
+
+        .container {
+            width: 210mm;
+            margin-top: 10px;
+            padding-bottom: 0px;
+        }
+
+        .info-topo {
+            padding: 30px;
+        }
+
+        .info-topo hr {
+            margin-top: 8px;
+        }
+
+        .divisao {
+            display: flex;
+        }
+
+        .container-esquerda {
+            width: 50mm; /* Largura fixa de 50mm */
+            display: flex;
+            margin-left: 30px;
+            margin-right: 50px;
+            margin-bottom: 30px;
+        }
+        .container-esquerda .caixa {
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #F4F5F5;
+        }
+
+        .container-esquerda .caixa {
+            margin-left: 0; /* Corrigido para não haver margem à esquerda */
+        }
+
+        .container-direita {
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+        }
+
+        .container-esquerda .caixa h2{
+            font-size: 1.3rem;
+            font-family: sans-serif;
+            margin-bottom: 10px;
+        }
+        .container-esquerda .caixa hr{
+            margin-bottom: 10px;
+        }
+        .container-esquerda .caixa .exclusivo{
+            margin-top: 10px;
+        }
+        .container-esquerda .caixa .pack{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: #303846;
+        }
+        .container-esquerda .caixa .pack p {
+            margin: 0; 
+            padding: 5px 0;
+            display: inline-block;
+        }
+        .container-esquerda .caixa h3{
+            color: #303846;
+            font-size: 0.9rem;
+        }
+        .container-esquerda .caixa p{
+            color: #303846;
+            margin-bottom: 5px;
+        }
+        .container-esquerda .caixa .box{
+            margin-bottom: 10px;
+        }
+        .combo{
+            display: flex;
+            justify-content: space-between;
+        }
+        .combo h3{
+            margin-top: 5px;
+        }
+        .container-direita {
+            flex: 1; /* Ocupa o restante do espaço disponível */
+            margin-left: 15px;
+            margin-right: 30px;
+        }
+        .container-direita .caixa2{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .caixa2 h2{
+            margin-bottom: 8px;
+        }
+        .caixa2 hr{
+            margin-bottom: 8px;
+        }
+        .caixa2 h4{
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        .caixa2 ul{
+            margin-left: 30px;
+        }
+        .combo2{
+            display: flex;
+            justify-content: left;
+            justify-items: center;
+        }
+        .combo2 a{
+            margin-top: 7px;
+            margin-left: 5px;
+        }
+        .container-master{
+            display: flex;
+        }
+        .container-download{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+        .container-download  button{
+            border-radius: 6px;
+            padding: 20px;
+            background-color: #303745;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.4s ease-in;
+            cursor: pointer;
+        }
+        .container-download button:hover{
+            background-color: #57647c;
+        }
+        .combo3{
+            display: flex;
+            justify-content: space-between;
+        }
+        .combo3 h4{
+            margin: 0;
+        }
+        .Telefone{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-master">
+            <div id="curriculo" class="container-master">
+                <div class="container">
+                    <div class="barra-topo"></div>
+                    <div class="info-topo">
+                        <h1>Michael Douglas</h1>
+                        <p>Busco oportunidades na área de desenvolvimento, onde possa aplicar meus conhecimentos e habilidades para contribuir com o crescimento da empresa. Sou dedicado, proativo e estou sempre em busca de novos desafios para desenvolver-me profissionalmente.</p>
+                        <hr>
+                    </div>
+                    <div class="divisao">
+                        <div class="container-esquerda">
+                            <div class="caixa">
+                                <h2>Dados pessoais</h2>
+                                <hr>
+                                <div class="box">
+                                    <h3>E-mail</h3>
+                                    <a class="resp" href="mailto:michaelsjmvr@hotmail.com" target="_blank">michaelsjmvr@hotmail.com</a>
+                                </div>
+                                <h3>Celular | Whatsapp</h3>
+                                <div class="Telefone">
+                                    <a href="https://api.whatsapp.com/send?phone=5521982093129&text=Ol%C3%A1%20Michael,%20Tudo%20bem%3F">21982093129</a>
+                                </div>
+                                <div class="box">
+                                    <h3>Site</h3>
+                                    <a class="resp" href="https://michaeldouglas.dev.br" target="_blank">michaeldouglas.dev.br</a>
+                                </div>
+                                <h3>Linkedin</h3>
+                                <a href="https://www.linkedin.com/in/michael-douglas-640a11180/" target="_blank">linkedin.com/in/michael-douglas-640a11180/</a>
+                                <h2 class="exclusivo">Competências</h2>
+                                <hr>
+                                <div class="pack">
+                                    <i class="fa-brands fa-html5"> HTML</i>
+                                </div>
+                                <div class="pack">
+                                    <i class="fa-brands fa-css3-alt"> CSS</i>
+                                </div>
+                                <div class="pack">
+                                    <i class="fa-brands fa-js"> Javascript</i>
+                                </div>
+                                <div class="pack">
+                                    <i class="fa-brands fa-git-alt"> GIT</i>
+                                </div>
+                                <div class="pack">
+                                    <i class="fa-brands fa-python"> Python</i>
+                                </div>
+                                <div class="pack">
+                                    <i class="fa-brands fa-node"> NodeJS</i>
+                                </div>
+                                <div class="pack">
+                                    <i class="fa-brands fa-php"> php</i>
+                                </div>
+                                <div class="pack">
+                                    <i class="fa-brands fa-wordpress"> Wordpress</i>
+                                </div>
+                                <div class="pack">
+                                    <i class="fa-brands fa-elementor"> Elementor</i>
+                                </div>
+                                <h2 class="exclusivo">Cursos</h2>
+                                <hr>
+                                <a href="https://www.udemy.com/certificate/UC-bc2ec701-3d07-4c76-96ec-4415a582aa7c/" target="_blank">
+                                    <h3 class="especial">Robô de WhatsApp com IA</h3>
+                                </a>
+                                <p>out 2023</p>
+                                <a href="https://www.udemy.com/certificate/UC-5977558c-c7fa-449c-b692-27060e99a4fb/" target="_blank">
+                                    <h3 class="especial">Interfaces Gráficas com Python - PyQt6 & Qt Designer</h3>
+                                </a>
+                                <p>jun 2023</p>
+                            </div>
+                        </div>
+                        <div class="container-direita">
+                            <div class="caixa2">
+                                <h2>Experiências</h2>
+                                <hr>
+                                <div class="combo">
+                                    <h3>T.i. | Professor</h3>
+                                    <p>mar 2022 - nov 2022</p>
+                                </div>
+                                <p>Grau Técnico, São João de Meriti</p>
+                                <h4>Funções na área de TI:</h4>
+                                <ul>
+                                    <li>Montagem e manutenção de computadores.</li>
+                                    <li>Manutenção das redes da empresa.</li>
+                                    <li>Responsável por instalar novos softwares.</li>
+                                    <li>Limpeza dos equipamentos.</li>
+                                    <li>Criação de planilhas no Excel.</li>
+                                    <li>Reparação nos sistemas operacionais Windows 7, 8, 10 e 11.</li>
+                                </ul>
+                                <h4>Função na área de Professor:</h4>
+                                <ul>
+                                    <li>Ensinar o pacote Office (Word, Excel e PowerPoint) básico e avançado aos alunos.</li>
+                                    <li>Ensinar a utilizar o sistema operacional Windows.</li>
+                                    <li>Ensinar linguagem de programação Python.</li>
+                                </ul>
+                                <div class="combo">
+                                    <h3>Analista | Tecnico | Desenvolvedor</h3>
+                                    <p>fev 2023 - jun 2023</p>
+                                </div>
+                                <p>Cash Automação, Rio de Janeiro</p>
+                                <h4>Funções na área de Analista de suporte:</h4>
+                                <ul>
+                                    <li>Responsável pelo suporte aos usuários.</li>
+                                    <li>Responsável por responder solicitações.</li>
+                                    <li>Responsável por resolver problemas relacionados ao sistema da empresa.</li>
+                                </ul>
+                                <h4>Funções na área de Técnico de campo:</h4>
+                                <ul>
+                                    <li>Responsável pelas manutenções no sistema da empresa.</li>
+                                    <li>Responsável por fazer novas instalações.</li>
+                                </ul>
+                                <h4>Funções na área de Desenvolvedor:</h4>
+                                <ul>
+                                    <li>Desenvolvi uma imagem de um sistema operacional com todas as ferramentas necessárias pré-instaladas para facilitar o trabalho do técnico de campo.</li>
+                                    <li>Desenvolvi o site da empresa conforme solicitado pela mesma.</li>
+                                </ul>
+                                <div class="combo2">
+                                    <h4>Site:</h4>
+                                    <a href="https://www.cashautomacao.com.br/" target="_blank" rel="noopener noreferrer">https://www.cashautomacao.com.br/</a>
+                                </div>
+                                <h2>Formação</h2>
+                                <hr>
+                                <div class="combo3">
+                                    <h4>Analise e Desenvolvimento de Sistemas</h4>
+                                    <p>jun 2023 - dez 2025</p>
+                                </div>
+                                <p>Descomplica Faculdade Digital, Rio de Janeiro</p>
+                                <h4>Certificados que fazem parte dessa graduação:</h4>
+                                <p>
+                                    <a href="https://certificados.descomplica.com.br/graduacao/ce902cb952d88d4f4786d3e7d6f5b3c1701fb56a512549af0db377540434f61d">Basic Frontend</a> | 
+                                    <a href="https://certificados.descomplica.com.br/graduacao/348945820be2a52db8db8f074174c0658b3bc5a77a281dc04bfc33db1279a00a">Programmer</a> | 
+                                    <a href="https://certificados.descomplica.com.br/graduacao/9537b9a2bc22a47b2e9e1c3fcb0184f7eb6285c2f81bb6772ec32e26b2273a75">Object-Oriented Developer</a> | 
+                                    Backend Developer</a> | 
+                                    Frontend Developer</a> | 
+                                    Full Stack Developer</a> | 
+                                    Devops Strategist</a> | 
+                                    Full cycle developer</a> | 
+                                    Smart Manager</a> | 
+                                    Advanced Tester</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="barra-bottom"></div>
+                </div>
+            </div>
+            <div class="container-download">
+                <div>
+                    <button onclick="gerarPDF()">Baixar PDF</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="/exercicio_1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
+</body>
+</html>
