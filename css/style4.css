@@ -192,4 +192,8 @@ body {
     .topo-titulo{ 
         height: 95%;
     }
+
+    .part-exp{
+        margin-top: 20px;
+    }
 }
