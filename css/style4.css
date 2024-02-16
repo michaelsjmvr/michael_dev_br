@@ -130,6 +130,14 @@ body {
     background-color: #00000067;
 }
 
+.btn-gpdf{
+    margin-top: 140px;
+}
+
+.pad-box{
+    padding: 50px;
+}
+
 @media (width <=576px) {
     .menu-desktop{
         display: none;
@@ -195,5 +203,13 @@ body {
 
     .part-exp{
         margin-top: 20px;
+    }
+
+    .btn-gpdf{
+        margin-top: 0px;
+    }
+
+    .pad-box{
+        padding: 10px;
     }
 }
