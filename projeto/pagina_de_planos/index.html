@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYSERVER</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        body{
+            background-color: #0C0F14;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #06070A;
+        }
+
+        .logo {
+            order: 0; 
+        }
+
+        .menu-superior {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 20px;
+            font-family: sans-serif;
+        }   
+        
+        .logo .link {
+            margin-left: 10px; 
+            margin-right: 5px;
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .ativo{
+            background-color: #CCE201;
+            color: black;
+            border-radius: 5px;
+            padding: 12px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .desativado{
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .desativado:hover{
+            background-color: #CCE201;
+            color: black;
+            border-radius: 5px;
+            padding: 12px;
+        }
+
+        section{
+           text-align: center;
+        }
+
+        section h1{
+            color:white;
+            padding: 50px;
+            font-size: 2rem;
+            font-family: sans-serif;
+        }
+
+        .organizacao{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            text-align: left;
+            background-color: #21262D;
+            width: 300px;
+            height: 350px;
+            list-style-type: none;
+            margin-right: 10px;
+            border-radius: 5px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .card h2{
+            color: white;
+            font-family: sans-serif;
+            padding-left: 5px;
+        }
+
+        .card .titulo{
+            margin: 10px;
+            padding-top: 10px;
+            border:2px solid;
+            border-bottom-color: #CCE201;
+            border-right-color: transparent;
+            border-left-color: transparent;
+            border-top-color: transparent;
+        }
+
+        .card .sub-titulo{
+            padding-top: 5px;
+            margin: 10px;
+        }
+
+        .card span{
+            font-size: 1rem;
+        }
+
+        ul {
+        list-style-type: none; 
+        padding-left: 0; 
+        margin-left: 15px;
+        }
+
+        li {
+            color: #ffffff; 
+            position: relative; 
+            padding-left: 20px; 
+            padding-bottom: 8px;
+        }
+
+        li::before {
+            content: "\2022"; 
+            color: #CCE201; 
+            position: absolute; 
+            left: 0; 
+        }
+
+        button {
+            background-color: #CCE201;
+            padding: 15px;
+            width: 250px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); 
+            bottom: 15px; 
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        button:hover{
+            background-color: #e5ff00;
+            font-weight: 600;
+        }
+
+        footer{
+            background-color: #06070A;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#" class="link">MYSERVER</a>
+        </div>
+        <div class="menu-superior">
+            <a href="#" class="link desativado">Home</a>
+            <a href="#" class="link ativo">Planos</a>
+            <a href="#" class="link desativado">Suporte</a>
+            <a href="#" class="link desativado">Contato</a>
+        </div>
+    </nav>
+    <section>
+        <h1>ESCOLHA SEU PLANO</h1>
+        <div class="organizacao">
+            <div class="card">
+                <h2 class="titulo">ESSENCIAL</h2>
+                <h2 class="sub-titulo">R$ 3.95<span> / mês</span></h2>
+                <ul>
+                    <li>1 Website</li>
+                    <li>1GB de Armazenamento</li>
+                    <li>10GB de transferencia</li>
+                </ul>
+                <button>ASSINE JÁ</button>
+            </div>
+            <div class="card">
+                <h2 class="titulo">PREMIUM</h2>
+                <h2 class="sub-titulo">R$ 7.95<span> / mês</span></h2>
+                <ul>
+                    <li>5 Websites</li>
+                    <li>3GB de Armazenamento</li>
+                    <li>transferencia ilimitada</li>
+                    <li>10 horas de suporte mensais</li>
+                </ul>
+                <button>ASSINE JÁ</button>
+            </div>
+            <div class="card">
+                <h2 class="titulo">GOLD</h2>
+                <h2 class="sub-titulo">R$ 13.95<span> / mês</span></h2>
+                <ul>
+                    <li>10 WebsiteS</li>
+                    <li>30GB de Armazenamento</li>
+                    <li>transferencia ilimitada</li>
+                    <li>30 horas de suporte mensais</li>
+                    <li>Email personalizado</li>
+                </ul>
+                <button>ASSINE JÁ</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>
+            Desenvolvido por Michael Douglas.
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de contatos</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        body{
+            background-color: rgb(236, 236, 236);
+            text-align: center;
+        }
+        
+        .div-master{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        .div-master ul {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            background-color: rgba(255, 255, 255, 0.712);
+            margin: 10px;
+            width: 350px;
+            height: auto;
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            
+        }
+
+        .imagem img {
+            width: 80px;
+            height: auto;
+            border-radius: 50%;
+            position: relative; /* Adicionado para garantir z-index */
+            z-index: 3; /* Adicionado z-index à imagem */
+        }
+
+        .move-up .imagem img {
+            position: relative; /* Adicionado para permitir o z-index */
+            z-index: 3;
+        }
+
+        .action{
+            padding: 12px;
+            background-color: rgb(226, 226, 226);
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .action img{
+            margin-left: 10px;
+        }
+
+        .capa {
+            width: 350px;
+            height: 180px;
+            background-image: url(./exercicio_4_imagens/thumb03.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .move-up {
+            margin-top: -35px;
+            position: relative;
+            z-index: 2;
+            font-family: sans-serif;
+        }
+
+        .move-up h2{
+            margin-bottom: 5px;
+        }
+
+        .move-up p{
+            margin-bottom: 10px;
+        }
+
+        footer{
+            background-color: #242238;
+            padding: 20px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lista de contatos</h1>
+    <div class="div-master">
+        <ul>
+            <li class="card">
+                <div class="capa"></div>
+                <div class="move-up">
+                    <div class="imagem"><img src="./exercicio_4_imagens/1.jpg" alt="Brennan George"></div>
+                    <h2>Brennan George</h2>
+                    <p>brennan.george@example.com</p>
+                </div>
+                <div class="action">
+                    <a href="#"><img src="./exercicio_4_imagens/edit.png" alt="editar"></a>
+                    <a href="#"><img src="./exercicio_4_imagens/delete.png" alt="deletar"></a>
+                </div>
+            </li>
+            <li class="card">
+                <div class="capa"></div>
+                <div class="move-up">
+                    <div class="imagem"><img src="./exercicio_4_imagens/2.jpg" alt="Adam Weaver"></div>
+                    <h2>Adam Weaver</h2>
+                    <p>adam.weaver@example.com</p>
+                <div class="action">
+                    <a href="#"><img src="./exercicio_4_imagens/edit.png" alt="editar"></a>
+                    <a href="#"><img src="./exercicio_4_imagens/delete.png" alt="deletar"></a>
+                </div>
+            </li>
+            <li class="card">
+                <div class="capa"></div>
+                <div class="move-up">
+                    <div class="imagem"><img src="./exercicio_4_imagens/3.jpg" alt="Troy Butler"></div>
+                    <h2>Troy Butler</h2>
+                    <p>troy.butler@example.com</p>
+                <div class="action">
+                    <a href="#"><img src="./exercicio_4_imagens/edit.png" alt="editar"></a>
+                    <a href="#"><img src="./exercicio_4_imagens/delete.png" alt="deletar"></a>
+                </div>
+            </li>
+            <li class="card">
+                <div class="capa"></div>
+                <div class="move-up">
+                    <div class="imagem"><img src="./exercicio_4_imagens/4.jpg" alt="Isobel Lewis"></div>
+                    <h2>Isobel Lewis</h2>
+                    <p>isobel.lewis@example.com</p>
+                <div class="action">
+                    <a href="#"><img src="./exercicio_4_imagens/edit.png" alt="editar"></a>
+                    <a href="#"><img src="./exercicio_4_imagens/delete.png" alt="deletar"></a>
+                </div>
+            </li>
+            <li class="card">
+                <div class="capa"></div>
+                <div class="move-up">
+                    <div class="imagem"><img src="./exercicio_4_imagens/5.jpg" alt="Lisa Garcia"></div>
+                    <h2>Lisa Garcia</h2>
+                    <p>lisa.garcia@example.com</p>
+                <div class="action">
+                    <a href="#"><img src="./exercicio_4_imagens/edit.png" alt="editar"></a>
+                    <a href="#"><img src="./exercicio_4_imagens/delete.png" alt="deletar"></a>
+                </div>
+            </li>
+            <li class="card">
+                <div class="capa"></div>
+                <div class="move-up">
+                    <div class="imagem"><img src="./exercicio_4_imagens/6.jpg" alt="Carolyn Silva"></div>
+                    <h2>Carolyn Silva</h2>
+                    <p>carolyn.silva@example.com</p>
+                <div class="action">
+                    <a href="#"><img src="./exercicio_4_imagens/edit.png" alt="editar"></a>
+                    <a href="#"><img src="./exercicio_4_imagens/delete.png" alt="deletar"></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <p>
+            Desenvolvido por Michael Douglas.
+        </p>
+    </footer>
+</body>
+</html>

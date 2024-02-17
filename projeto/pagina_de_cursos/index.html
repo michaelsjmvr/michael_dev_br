@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenser</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            border: 0;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            background-color: #2B2A2B;
+        }
+
+        header .logo{
+            text-align: center;
+            margin-left: 5%;
+        }
+
+        header nav{
+            padding: 40px;
+        }
+
+        header nav .link{
+            color: #facf11d0;
+            text-decoration: none;
+            border:1px solid;
+            padding: 13px;
+        }
+
+        header nav .link:hover{
+            color: #ffe25f;
+        }
+
+        .hero{
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: left;
+            justify-items: center;
+            background: linear-gradient(to top, #ffe25f, #ffffff);
+        }
+
+        .hero .organizacao{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            flex-direction: column;
+            padding: 80px;
+        }
+
+        .hero .organizacao h1{
+            font-family: sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 35px;
+        }
+
+        .hero .organizacao a{
+            width: 130px;
+            padding: 15px;
+            border-radius: 5px;
+            border: 2px solid;
+            border-color: transparent;
+            background-color: #FFCF01;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            color:#2b2a2bcc;
+            transition: color 1s ease-in-out;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .hero .organizacao a:hover{
+            background-color: transparent;
+            border: 2px solid;
+            color: #FED001;
+        }
+
+        .hero .imagem{
+            height: 100%;
+        }
+
+        .hero .imagem img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-info{
+            text-align: center;
+        }
+
+        .content-info h2{
+            padding: 60px;
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+
+        .content-info .organizacao{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            min-width: 330px;
+        }
+
+        .content-info .organizacao .card{
+            margin: 10px;
+            width: 330px;
+            background-color: none;
+
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            min-width: 330px;
+        }
+
+        .content-info .organizacao .card .border-box{
+            width: 327px;
+            box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+            position: relative;
+            margin-top: -5px;
+            z-index: 1;
+
+        }
+
+        .content-info .organizacao .card img{
+            width: 329px;
+            margin: 0;
+            z-index: 2;
+        }
+
+        .content-info .organizacao .card .border-box h3{
+            padding: 18px;
+            text-align: left;
+            font-family: sans-serif;
+        }
+
+        .content-info .organizacao .card .border-box p{
+            text-align: left;
+            font-family: sans-serif;
+            padding-left: 15px;
+            padding-right: 12px;
+            padding-bottom: 18px;
+        }
+
+        .final{
+            margin: 40px
+        }
+
+        .final a{
+            width: 130px;
+            padding: 15px;
+            border-radius: 5px;
+            border: 2px solid;
+            border-color: transparent;
+            background-color: #FFCF01;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            color:#2b2a2bcc;
+            transition: color 1s ease-in-out;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .final a:hover{
+            background-color: transparent;
+            border: 2px solid;
+            color: #FED001;
+        }
+
+        .background-nossa-escola{
+            background-color: #003464;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .background-nossa-escola .organizacao{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .background-nossa-escola .organizacao .caixa{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            min-width: 380px;
+        }
+
+        .background-nossa-escola .imagem{
+            width: 50%;
+            margin: 0;
+        }
+
+        .background-nossa-escola .imagem img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;    
+        }
+
+        .background-nossa-escola .texto-nossa-escola{
+            color: white;
+            width: 40%;
+            padding: 40px;
+        }
+
+        .background-nossa-escola .texto-nossa-escola h3{
+            margin-top: 10% ;
+            font-size: 3rem;
+            font-weight: 700;
+            font-family: sans-serif;
+        }
+
+        .caixa-contatos{
+            text-align: center;
+            padding: 60px;
+            font-size: 1.5rem;
+        }
+
+        .mapa{
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .endereco{
+            text-align: right;
+            margin-right: 10%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+
+        footer{
+            padding: 20px;
+            background-color: #2B2A2B;
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./exercicio_9_imagens/logoAprenser.png" alt="logo">
+        </div>
+        <nav>
+            <a href="#" class="link">Cursos</a>
+            <a href="#" class="link">Nossa Escola</a>
+            <a href="#" class="link">Contatos</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="organizacao">
+            <h1>O saber é o que <br>transforma <br>nosso SER</h1>
+            <a href="#" class="link">Saiba mais</a>
+        </div>
+        <div class="imagem">
+            <img src="./exercicio_9_imagens/HeroImage.png" alt="hero">
+        </div>
+    </section>
+    <section class="content-info">
+        <h2>Principais Cursos</h2>
+        <div class="organizacao">
+            <div class="card">
+                <img src="./exercicio_9_imagens/curso-design.png" alt="img1">
+                <div class="border-box">
+                    <h3>Design para webG</h3>
+                    <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./exercicio_9_imagens/curso-design-1.png" alt="img2">
+                <div class="border-box">
+                    <h3>Front End Developer</h3>
+                    <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <img src="./exercicio_9_imagens/curso-design-2.png" alt="img3">
+                <div class="border-box">
+                    <h3>Back End Developer</h3>
+                    <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="final">
+            <a href="#" class="link">Ver mais cursos</a>
+        </div>
+    </section>
+    <section class="background-nossa-escola">
+        <div class="organizacao">
+            <div class="imagem caixa">
+                <img src="./exercicio_9_imagens/nossa-escola.png" alt="Nossa escola">
+            </div>
+            <div class="texto-nossa-escola caixa">
+                <h3>Nossa escola</h3>
+                <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="caixa-contatos">
+            <h2>
+                Contatos
+            </h2>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.6713762203326!2d-7.39921912518621!3d39.88159838803741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3d67b31ea37983%3A0xbe6438ec01f3114f!2sAv.%20da%20Liberdade%2C%206005-150%20Escalos%20de%20Baixo%2C%20Portugal!5e0!3m2!1spt-BR!2sbr!4v1707149065102!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="endereco">
+            <p>Av. da Liberdade, 1001</p>
+            <p>Tel: +351 21 123 456</p>
+            <p>E-mail: contato@aprenser.com</p>
+        </div>
+    </section>
+    <footer>
+        <p>Desenvolvido por Michael Douglas.</p>
+    </footer>
+</body>
+</html>
