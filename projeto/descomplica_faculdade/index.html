@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descomplica | Análise e Desenvolvimento de Sistemas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            background-color: #f0f0f0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #01b16d;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        @import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
+
+        .menu,
+        .menu-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            z-index: 10;
+            overflow: hidden;
+            box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+        }
+
+        .menu li a {
+            display: inline-block;
+            text-indent: -500em;
+            height: 5em;
+            width: 5em;
+            line-height: 5em;
+            text-align: center;
+            color: #72739f;
+            position: relative;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: background 0.1s ease-in-out;
+        }
+
+        .menu li a:before {
+            font-family: FontAwesome;
+            text-indent: 0em;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 1.4em;
+        }
+
+        .menu li a.search:before {
+            content: "\f002";
+        }
+
+        .menu li a.archive:before {
+            content: "\f187";
+        }
+
+        .menu li a.pencil:before {
+            content: "\f040";
+        }
+
+        .menu li a.contact:before {
+            content: "\f003";
+        }
+
+        .menu li a.about:before {
+            content: "\f007";
+        }
+
+        .menu li a.home:before {
+            content: "\f039";
+        }
+
+        .menu-bar li a:hover,
+        .menu li a:hover,
+        .menu li:first-child a {
+            background: #01b16d;
+            color: #fff;
+        }
+
+        .menu-bar {
+            overflow: hidden;
+            left: 5em;
+            z-index: 5;
+            width: 0;
+            height: 0;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .menu-bar li a {
+            display: block;
+            height: 4em;
+            line-height: 4em;
+            text-align: center;
+            color: #72739f;
+            text-decoration: none;
+            position: relative;
+            font-family: verdana;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: background 0.1s ease-in-out;
+        }
+
+        .menu-bar li:first-child a {
+            height: 5em;
+            background: #01b16d;
+            color: #fff;
+            line-height: 5
+        }
+
+        .para {
+            color: #033f72;
+            padding-left: 100px;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .open {
+            width: 14em;
+            height: 100%;
+        }
+
+        .calendario{
+            text-decoration: none;
+            color: #033f72;
+        }
+
+        .calendario:hover{
+            color:#01b16d;
+        }
+
+        .btn-play {
+            padding: 20px; 
+            border: 2px solid black;
+            border-radius: 50%;
+            color: black;
+            cursor: pointer;
+        }
+
+        .btn-play:hover{
+            border: 2px solid #01b16d; 
+            color: #01b16d; ;
+        }
+
+        .star {
+            color: yellow;
+            margin-right: 5px;
+            font-size: 28px;
+        }
+
+        @media (max-width: 1360px) {
+            body {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section style="margin-left: 50px;">
+        <div style="display: flex; justify-content: center;">
+            <nav style="display: flex; flex-direction: column; justify-content: start;">
+                <ul class="menu">
+
+                    <li title="Menu Descomplica"><a href="#" class="menu-button home">menu</a></li>
+
+                    <li>
+                        <a href="#" title="Perfil" style="display: flex; justify-content: center; align-items: center;">
+                            <img style="width: 30px; border-radius: 50%;" src="./img/perfil.webp" alt="Perfil">
+                        </a>
+                    </li>
+                    <li title="Secretaria"><a href="#" class="fa-solid fa-bank"><i class="fas fa-user-secret"></i>
+                            Secretaria</a></li>
+                    <li title="Notificações"><a href="#" class="fas fa-bell"><i class="fas fa-bell"></i>
+                            Notificações</a></li>
+                    <li title="Acessibilidade"><a href="#" class="fas fa-wheelchair"><i class="fas fa-wheelchair"></i>
+                            Acessibilidade</a></li>
+                </ul>
+
+                <ul class="menu-bar">
+                    <li><a style="display: flex; justify-content: center;" href="#" class="menu-button"><img
+                                style="width:24px; height: 24px; margin-top: 28px; margin-right: 10px;"
+                                src="./img/logo.png" alt="Descomplica - ADS">Descomplica - ADS</a></li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Disciplinas</a></li>
+                    <li><a href="#">Fórum</a></li>
+                    <li><a href="#">Bibliotéca</a></li>
+                    <li><a href="#">Anotações</a></li>
+                    <li><a href="#">Carreira</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; flex-direction: column; font-family: sans-serif;">
+                <div style="margin-top: 30px; margin-bottom: 20px;">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 10px;">Continuar aula de onde parou</h2>
+                    <div style="display: flex; flex-direction: column; justify-content: center;">
+                        <div style="width: fit-content; display: flex; flex-direction: row; align-items: center;">
+                            <i class="fas fa-play btn-play"></i>
+                            <h2 style="margin-left: 10px; color: black;">Design de Software</h2>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin-bottom: 20px;">
+                <div style="margin-bottom: 30px;">
+                    <h2 style="font-size: 1.8rem;">Adicione na agenda</h2>
+                    <p style="font-size: 1.0rem; font-weight: 400;">Seus principais eventos aparecem aqui quando estão disponíveis</p>
+                </div>
+                <div style="display: flex; justify-content: center;flex-wrap: wrap;" class="container">
+                    <div style="margin-right: 10px; margin-bottom: 10px; text-align: center; width: 280px; height: 350px; border: 1px solid rgba(0, 0, 0, 0.11); border-radius: 5px;" class="box box-1">
+                        <h2 style="background-color: #01b16d; color: white; padding: 8px;">Entregas</h2>
+                        <img style="border-radius: 50%; margin-top: 30px;" src="./img/clock.png" alt="">
+                        <h3 style="font-size: 3rem; font-weight: 700; margin-bottom: 20px;">Agora</h3>
+                        <h4 style="margin-left: 5px; margin-right: 5px;">Parcial de Design de Software</h4>
+                        <p style="margin-top: 10px;">Limite para entregas da P1</p>
+                    </div>
+                    <div style="margin-right: 10px; margin-bottom: 10px; text-align: center; width: 280px; height: 350px; border: 1px solid rgba(0, 0, 0, 0.11); border-radius: 5px;" class="box box-1">
+                        <h2 style="background-color: #01b16d; color: white; padding: 8px;">Entregas</h2>
+                        <img style="border-radius: 50%; margin-top: 30px;" src="./img/clock.png" alt="">
+                        <h3 style="font-size: 3rem; font-weight: 700; margin-bottom: 20px;">Agora</h3>
+                        <h4 style="margin-left: 5px; margin-right: 5px;">Parcial de Estruturas de Dados para Sistemas</h4>
+                        <p style="margin-top: 10px;">Limite para entregas da P1</p>
+                    </div>
+                    <div style="margin-right: 10px; margin-bottom: 10px; text-align: center; width: 280px; height: 350px; border: 1px solid rgba(0, 0, 0, 0.11); border-radius: 5px;" class="box box-1">
+                        <h2 style="background-color: #01b16d; color: white; padding: 8px;">Entregas</h2>
+                        <img style="border-radius: 50%; margin-top: 30px;" src="./img/clock.png" alt="">
+                        <h3 style="font-size: 3rem; font-weight: 700; margin-bottom: 20px;">Agora</h3>
+                        <h4 style="margin-left: 5px; margin-right: 5px;">Parcial de Programação 1</h4>
+                        <p style="margin-top: 10px;">Limite para entregas da P1</p>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                   <a style="margin-bottom: 10px;" class="calendario" href="#"><p>Exibir calendário</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style=" margin-top: 50px; display: flex; justify-content: center;">
+        <div style="display: flex; flex-direction: column; width: fit-content;">
+            <hr style="margin-bottom: 15px; margin-top: 10px;">
+            <h2 style="font-family: sans-serif; font-size: 1.8rem;">Atividades que valem nota</h2>
+            <p style="font-family: sans-serif;font-size: 1.0rem; font-weight: 400;">Estas são algumas das atividades que valem nota e que vão te aproximar ainda mais do seu próximo certificado</p>
+        </div>
+    </section>
+    <section style=" width: 100%; display: flex; justify-content: center; margin-left: 60px; margin-top: 30px;">
+        <div style="border-radius: 5px; font-family: sans-serif; background-color: #f2f2f3; width: fit-content; padding: 10px; display: flex; justify-content: center; flex-direction: row; margin-bottom: 50px;">
+            <div style="width: 370px; background-color: #f2f2f3; padding: 30px; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <h2 style="color: #636769; font-size: 0.9rem; text-align: left;">Certificado do Trimestre</h2>
+                <h3 style="color: #636769; font-size: 1.4rem; font-weight: 700;">Object-Oriented Developer</h3>
+                <img style="width: fit-content; text-align: center;" src="./img/progresso.png" alt="">
+                <div style="display: flex;">
+                    <div style="display: flex; flex-direction: column;">
+                        <span class="star">&#9733;</span>
+                        <span style="margin-top: 10px;" class="star">&#9733;</span>
+                        <span style="margin-top: 10px;" class="star">&#9733;</span>
+                    </div>
+                    <div style="margin-top: 12px;">
+                        <p style="color: #636769; ">Design de Software</p>
+                        <p style="color: #636769; margin-top: 20px;">Estruturas de Dados para Sistemas Inteligentes</p>
+                        <p style="color: #636769; margin-top: 20px;">Programação 1</p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-right: 5px; background-color: white; border: 1px solid rgb(219, 219, 219); border-radius: 5px; width:  250px;">
+                <h2 style=" text-align: center; font-size: 0.8rem; padding: 10px; background-color:#01b16d; color:white;">ENTREGA EM <span style="color: yellow">02:55:10</span><span style="margin-left: 5px; background-color: black; padding-left: 5px; padding-right: 5px; padding-top: 3px; padding-bottom: 3px; font-size: 18px; border-radius: 50%;" class="star">&#9733;</span></h2>
+                <h3 style="color: #636769; text-align: center; margin-top: 30px; margin-bottom: 30px; font-size: 1rem;">Design de Software</h3>
+                <hr>
+                <h3 style="color: #636769; font-size: 1rem; text-align: center; margin-top: 10px; margin-bottom: 10px;">Atividades da Parcial 1</h3>
+                <p style="margin-bottom: 10px; color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> P&R da Aula 2</p>
+                <p style="margin-bottom: 10px; color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> P&R da Aula 6</p>
+                <p style="color: #636769; margin-left: 45px;  margin-bottom: 10px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> Lista de Revisão 1</p>
+                <hr>
+                <h3 style="color: #636769; font-size: 1rem; text-align: center; margin-top: 10px; margin-bottom: 10px;">Atividades da Parcial 2</h3>
+                <p style="margin-bottom: 10px; color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> P&R da Aula 10</p>
+                <p style="margin-bottom: 10px; color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> P&R da Aula 14</p>
+                <p style="color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> Lista de Revisão 2</p>
+            </div>
+
+            <div style="margin-right: 5px; background-color: white; border: 1px solid rgb(219, 219, 219); border-radius: 5px; width:  250px;">
+                <h2 style="color: #636769; text-align: center; font-size: 0.8rem; padding: 10px; background-color:#01b16d; color:white;">ENTREGA EM <span style="color: yellow">02:55:10</span><span style="margin-left: 5px; background-color: black; padding-left: 5px; padding-right: 5px; padding-top: 3px; padding-bottom: 3px; font-size: 18px; border-radius: 50%;" class="star">&#9733;</span></h2>
+                <h3 style="color: #636769; text-align: center; margin-top: 21px; margin-bottom: 21px; font-size: 1rem;">Estruturas de Dados para Sistemas Inteligentes</h3>
+                <hr>
+                <h3 style="color: #636769; font-size: 1rem; text-align: center; margin-top: 10px; margin-bottom: 10px;">Atividades da Parcial 1</h3>
+                <p style="margin-bottom: 10px; color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> P&R da Aula 2</p>
+                <p style="margin-bottom: 10px; color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> P&R da Aula 6</p>
+                <p style="color: #636769; margin-left: 45px;  margin-bottom: 10px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> Lista de Revisão 1</p>
+                <hr>
+                <h3 style="color: #636769; font-size: 1rem; text-align: center; margin-top: 10px; margin-bottom: 10px;">Atividades da Parcial 2</h3>
+                <p style="margin-bottom: 10px; color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> P&R da Aula 10</p>
+                <p style="margin-bottom: 10px; color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> P&R da Aula 14</p>
+                <p style="color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> Lista de Revisão 2</p>
+            </div>
+
+            <div style="background-color: white; border: 1px solid rgb(219, 219, 219); border-radius: 5px; width:  250px;">
+                <h2 style="color: #636769; text-align: center; font-size: 0.8rem; padding: 10px; background-color:#01b16d; color:white;">ENTREGA EM <span style="color: yellow">02:55:10</span><span style="margin-left: 5px; background-color: black; padding-left: 5px; padding-right: 5px; padding-top: 3px; padding-bottom: 3px; font-size: 18px; border-radius: 50%;" class="star">&#9733;</span></h2>
+                <h3 style="color: #636769; text-align: center; margin-top: 30px; margin-bottom: 30px; font-size: 1rem;">Programação 1</h3>
+                <hr>
+                <h3 style="color: #636769; font-size: 1rem; text-align: center; margin-top: 10px; margin-bottom: 10px;">Atividades da Parcial 1</h3>
+                <p style="margin-bottom: 10px; color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> P&R da Aula 2</p>
+                <p style="margin-bottom: 10px; color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> P&R da Aula 6</p>
+                <p style="color: #636769; margin-left: 45px;  margin-bottom: 10px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> Lista de Revisão 1</p>
+                <hr>
+                <h3 style="color: #636769; font-size: 1rem; text-align: center; margin-top: 10px; margin-bottom: 10px;">Atividades da Parcial 2</h3>
+                <p style="margin-bottom: 10px; color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> P&R da Aula 10</p>
+                <p style="margin-bottom: 10px; color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> P&R da Aula 14</p>
+                <p style="color: #636769; margin-left: 45px;"><i style="color: #01b16d; background-color: white; border: 1px solid #01b16d; border-radius: 50%; padding: 2px;" class="fas fa-check"></i> Lista de Revisão 2</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuButton = document.querySelector('.menu-button');
+            var menuBar = document.querySelector('.menu-bar');
+
+            menuButton.addEventListener('click', function () {
+                menuBar.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
