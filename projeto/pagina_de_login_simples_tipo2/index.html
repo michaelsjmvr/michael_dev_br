@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logar | Registro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #3C68B8;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h1{
+            margin-bottom: 10px;
+        }
+
+        h2{
+            font-size: 0.7rem;
+            font-family: sans-serif;
+            font-weight: 300;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+
+        input{
+            margin-bottom: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 1px solid;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: rgb(202, 202, 202);
+            outline: none;
+        }
+
+        input:hover, input:focus{
+            border-bottom-color: #3C68B8;
+        }
+
+        button{
+            background-color: #3C68B8;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            border:none;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        button:hover{
+            background-color: #477bda;
+        }
+
+        .registrar{
+           width: 450px; 
+           height: 350px; 
+           padding: 20px; 
+           background-color: white; 
+           display: none; 
+           flex-direction: column; 
+           justify-content: center; 
+           padding: 20px;
+        }
+
+        .login{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center;
+        }
+
+        .Logar{
+            display: flex;
+        }
+
+        a{
+            cursor: pointer;
+            color: #3C68B8;
+        }
+
+        a:hover{
+            color: #477bda;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="login">
+            <div style="width: 450px; height: 350px; padding: 20px; background-color: white; display: flex; flex-direction: column; justify-content: center; padding: 20px;" class="Logar">
+                <form style="display: flex; flex-direction: column;" action="">
+                    <h1 style="color: #3C68B8;">Faça login</h1>
+                    <h2>USUÁRIO</h2>
+                    <input type="text" name="" id="" required>
+                    <h2>E-MAIL</h2>
+                    <input type="email" name="" id=""required>
+                    <h2>SENHA</h2>
+                    <input type="password" name="" id=""required>
+                    <div style="margin-top: 20px; display: flex; flex-direction: row; justify-content: space-between;">
+                        <button type="submit">Login</button>
+                        <div style="display: flex;">
+                            <div style="display: flex; justify-content: center; flex-direction: column;">
+                                <div style="display: flex;">
+                                    <p>Não possui conta? &nbsp;</p> 
+                                <a id="registrar">Registrar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="registrar">
+                <form style="display: flex; flex-direction: column;" action="">
+                    <h1 style="color: #3C68B8;">Registrar-se</h1>
+                    <h2>USUÁRIO</h2>
+                    <input type="text" name="" id=""required>
+                    <h2>E-MAIL</h2>
+                    <input type="email" name="" id=""required>
+                    <h2>SENHA</h2>
+                    <input type="password" name="" id=""required>
+                    <h2>CONFIRMAR SENHA</h2>
+                    <input type="password" name="" id=""required>
+                    <div style="margin-top: 10px; display: flex; flex-direction: row; justify-content: space-between;">
+                        <button type="submit">Registrar-se</button>
+                        <div style="display: flex;">
+                            <div style="display: flex; justify-content: center; flex-direction: column;">
+                                <div style="display: flex;">
+                                    <p>Já possui conta? &nbsp;</p> 
+                                <a id="login">Faça login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    document.getElementById("login").addEventListener("click", function() {
+        var login = document.querySelector(".Logar");
+        var registrar = document.querySelector(".registrar");
+        login.style.display = "flex";
+        registrar.style.display = "none";
+    });
+    
+    document.getElementById("registrar").addEventListener("click", function() {
+        var login = document.querySelector(".Logar");
+        var registrar = document.querySelector(".registrar");
+        login.style.display = "none";
+        registrar.style.display = "flex";
+    });
+</script>
+
+</html>
